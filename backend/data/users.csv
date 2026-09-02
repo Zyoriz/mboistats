@@ -1,0 +1,51 @@
+id_user,device_id,name,email,type_user,major_id,major_name,interests,created_at
+05c90f14-267b-4d56-97ca-57d45ef8dad6,device_05c90f14,Yolanda Fransiska 1,user_1_yolanda_fransiska_1@example.com,mahasiswa,9,Matematika,"[1, 4, 2]",2026-06-17T03:03:27.864324+00:00
+33124e20-60d5-4dd4-9898-8b06c9a9fd94,device_33124e20,Dewi Anggraini 2,user_2_dewi_anggraini_2@example.com,mahasiswa,18,Pariwisata / Perhotelan,"[1, 7, 4]",2026-08-01T03:03:27.864345+00:00
+25e07130-8d77-4ff5-b7f9-cd89aa108ab3,device_25e07130,Ahmad Fauzi 3,user_3_ahmad_fauzi_3@example.com,mahasiswa,8,Statistika,"[1, 4, 5]",2026-08-02T03:03:27.864354+00:00
+bf3a5d5b-c327-42ec-b671-b8dbf8028a3b,device_bf3a5d5b,Siti Rahmawati 4,user_4_siti_rahmawati_4@example.com,mahasiswa,18,Pariwisata / Perhotelan,"[1, 7]",2026-07-06T03:03:27.864361+00:00
+ff636399-eac4-4651-bf85-cdff2e97468d,device_ff636399,Taufik Hidayat 5,user_5_taufik_hidayat_5@example.com,mahasiswa,1,Teknik Informatika,"[1, 3]",2026-07-24T03:03:27.864366+00:00
+6db1e2a9-a463-459f-b152-4afc6aee348c,device_6db1e2a9,Dimas Arya 6,user_6_dimas_arya_6@example.com,mahasiswa,9,Matematika,"[1, 4, 7]",2026-07-13T03:03:27.864371+00:00
+018ad5f7-fb12-48fc-bb99-2297e1b9d44c,device_018ad5f7,Dewi Anggraini 7,user_7_dewi_anggraini_7@example.com,mahasiswa,4,Ilmu Komputer,"[1, 3]",2026-06-26T03:03:27.864377+00:00
+7db2638c-634a-43a1-89de-51886413e3af,device_7db2638c,Indah Sari 8,user_8_indah_sari_8@example.com,umum,20,Umum,"[1, 5]",2026-06-30T03:03:27.864382+00:00
+b8dad4f2-6780-4e6f-ba72-27a60be9f62c,device_b8dad4f2,Dewi Anggraini 9,user_9_dewi_anggraini_9@example.com,umum,20,Umum,"[1, 5]",2026-07-16T03:03:27.864387+00:00
+7aa1f439-02e0-4914-883c-6bee562af9b6,device_7aa1f439,Yolanda Fransiska 10,user_10_yolanda_fransiska_10@example.com,mahasiswa,12,Ilmu Komunikasi,"[5, 7]",2026-06-19T03:03:27.864392+00:00
+ab308a62-9d07-4e59-be46-ab9935e02379,device_ab308a62,Citra Lestari 11,user_11_citra_lestari_11@example.com,mahasiswa,8,Statistika,"[1, 4, 5]",2026-07-29T03:03:27.864396+00:00
+206a1d37-2d59-4bdb-945a-6a188428924e,device_206a1d37,Hadi Wijaya 12,user_12_hadi_wijaya_12@example.com,umum,20,Umum,"[1, 5, 4]",2026-06-24T03:03:27.864401+00:00
+88283ad1-080e-4b10-8974-b2b077f9799f,device_88283ad1,Lukman Hakim 13,user_13_lukman_hakim_13@example.com,mahasiswa,12,Ilmu Komunikasi,"[5, 7, 3]",2026-06-20T03:03:27.864406+00:00
+f7e7ad1e-e5dc-4d9a-b28d-2dffad750146,device_f7e7ad1e,Zulfa Azizah 14,user_14_zulfa_azizah_14@example.com,mahasiswa,20,Umum,"[1, 5]",2026-06-30T03:03:27.864411+00:00
+bb002908-3b76-41f2-a356-52469ee5d8a6,device_bb002908,Nabila Syahrani 15,user_15_nabila_syahrani_15@example.com,mahasiswa,15,Pendidikan / Keguruan,"[4, 7, 6]",2026-06-20T03:03:27.864416+00:00
+37f4a7b9-06d6-471b-a594-4b82814d6f39,device_37f4a7b9,Siti Rahmawati 16,user_16_siti_rahmawati_16@example.com,mahasiswa,11,Perencanaan Wilayah & Kota (PWK),"[1, 5]",2026-06-15T03:03:27.864421+00:00
+e3ac245e-7416-4788-af57-cf01d61e465b,device_e3ac245e,Budi Santoso 17,user_17_budi_santoso_17@example.com,mahasiswa,2,Sistem Informasi,"[1, 3]",2026-07-09T03:03:27.864425+00:00
+fd476588-b052-455b-b49a-6f265183c355,device_fd476588,Indah Sari 18,user_18_indah_sari_18@example.com,mahasiswa,19,Hukum,"[2, 7]",2026-07-14T03:03:27.864430+00:00
+05cce64d-2130-403c-a726-170963c45e3b,device_05cce64d,Gita Permata 19,user_19_gita_permata_19@example.com,mahasiswa,13,Administrasi Publik,"[2, 4, 7]",2026-06-23T03:03:27.864436+00:00
+ff877645-9716-4e8e-9274-018206d211a5,device_ff877645,Oki Setiawan 20,user_20_oki_setiawan_20@example.com,mahasiswa,5,Ekonomi Pembangunan,"[1, 2, 7, 5]",2026-06-30T03:03:27.864441+00:00
+c2dd9db5-7e99-4039-aae3-f42bef8308d3,device_c2dd9db5,Indah Sari 21,user_21_indah_sari_21@example.com,mahasiswa,14,Sosiologi,"[2, 5, 7]",2026-07-09T03:03:27.864445+00:00
+86adf413-3b91-474a-ab07-0dd247f5c652,device_86adf413,Lukman Hakim 22,user_22_lukman_hakim_22@example.com,mahasiswa,5,Ekonomi Pembangunan,"[1, 2, 7]",2026-07-29T03:03:27.864449+00:00
+55e8f06e-74ce-4270-bccf-45e9176a578f,device_55e8f06e,Rizky Firmansyah 23,user_23_rizky_firmansyah_23@example.com,mahasiswa,4,Ilmu Komputer,"[1, 3, 2]",2026-06-14T03:03:27.864454+00:00
+6fe823ba-10a6-41ce-b4d1-357e05eb46f4,device_6fe823ba,Zulfa Azizah 24,user_24_zulfa_azizah_24@example.com,mahasiswa,3,Sains Data,"[1, 4, 2, 5]",2026-07-05T03:03:27.864458+00:00
+04fc4a94-b770-47ac-bfe4-e0e41f6c945a,device_04fc4a94,Rian Pratama 25,user_25_rian_pratama_25@example.com,mahasiswa,18,Pariwisata / Perhotelan,"[1, 7]",2026-08-03T03:03:27.864462+00:00
+7a936bd8-2ae1-4fc1-9ba8-36beda1aaad9,device_7a936bd8,Zulfa Azizah 26,user_26_zulfa_azizah_26@example.com,mahasiswa,18,Pariwisata / Perhotelan,"[1, 7]",2026-06-15T03:03:27.864467+00:00
+f8e0ac4d-8a7c-49d8-aa5c-7318df7aeed5,device_f8e0ac4d,Yolanda Fransiska 27,user_27_yolanda_fransiska_27@example.com,mahasiswa,10,Teknik Sipil,"[1, 5]",2026-07-05T03:03:27.864471+00:00
+20a9d480-3f4d-4971-af18-dabbff0f2471,device_20a9d480,Ahmad Fauzi 28,user_28_ahmad_fauzi_28@example.com,umum,20,Umum,"[1, 5]",2026-07-18T03:03:27.864475+00:00
+71e576a8-9467-4c8f-b50c-f885b574af70,device_71e576a8,Rian Pratama 29,user_29_rian_pratama_29@example.com,umum,20,Umum,"[1, 5]",2026-07-28T03:03:27.864479+00:00
+8659e198-85b3-4d48-a4c1-a44222916051,device_8659e198,Yolanda Fransiska 30,user_30_yolanda_fransiska_30@example.com,mahasiswa,17,Kesehatan Masyarakat,"[4, 7]",2026-07-25T03:03:27.864484+00:00
+4c5e8a4b-ed3c-4f32-808c-c6686281dbce,device_4c5e8a4b,Lukman Hakim 31,user_31_lukman_hakim_31@example.com,umum,20,Umum,"[1, 5]",2026-06-15T03:03:27.864489+00:00
+75d4e6b1-750e-42a5-b29c-301baaf1a713,device_75d4e6b1,Rian Pratama 32,user_32_rian_pratama_32@example.com,umum,20,Umum,"[1, 5]",2026-07-03T03:03:27.864494+00:00
+8741b3e4-f790-444c-829e-32f280970190,device_8741b3e4,Ahmad Fauzi 33,user_33_ahmad_fauzi_33@example.com,mahasiswa,12,Ilmu Komunikasi,"[5, 7]",2026-06-11T03:03:27.864498+00:00
+9b20524d-0be0-47ec-b0ba-01491a5be923,device_9b20524d,Joko Susilo 34,user_34_joko_susilo_34@example.com,mahasiswa,8,Statistika,"[1, 4, 5]",2026-06-04T03:03:27.864503+00:00
+7002225b-c61b-4884-835b-cda530bb37b5,device_7002225b,Citra Lestari 35,user_35_citra_lestari_35@example.com,mahasiswa,16,Pertanian / Agribisnis,"[6, 1]",2026-06-16T03:03:27.864507+00:00
+f825630e-13df-4aa3-8083-bf97224fe282,device_f825630e,Siti Rahmawati 36,user_36_siti_rahmawati_36@example.com,umum,20,Umum,"[1, 5, 4]",2026-06-04T03:03:27.864512+00:00
+00fd2976-e9ff-4dff-b176-61c5a1f44931,device_00fd2976,Siti Rahmawati 37,user_37_siti_rahmawati_37@example.com,mahasiswa,17,Kesehatan Masyarakat,"[4, 7]",2026-07-07T03:03:27.864517+00:00
+52931df5-5fe8-47c8-87d1-051946198547,device_52931df5,Gita Permata 38,user_38_gita_permata_38@example.com,umum,20,Umum,"[1, 5]",2026-06-20T03:03:27.864521+00:00
+70cce41e-7825-485a-95b9-9ad5226b5ee0,device_70cce41e,Gita Permata 39,user_39_gita_permata_39@example.com,mahasiswa,13,Administrasi Publik,"[2, 4, 7]",2026-06-23T03:03:27.864525+00:00
+9ff94146-3086-4f32-b5ba-7453ac40810f,device_9ff94146,Lukman Hakim 40,user_40_lukman_hakim_40@example.com,mahasiswa,17,Kesehatan Masyarakat,"[4, 7]",2026-07-19T03:03:27.864529+00:00
+7fc9c339-406e-4aac-904a-383d1566a8e4,device_7fc9c339,Hadi Wijaya 41,user_41_hadi_wijaya_41@example.com,mahasiswa,1,Teknik Informatika,"[1, 3]",2026-07-20T03:03:27.864534+00:00
+aa56314e-99f9-4088-9b7c-e8287bc53628,device_aa56314e,Taufik Hidayat 42,user_42_taufik_hidayat_42@example.com,mahasiswa,3,Sains Data,"[1, 4, 2]",2026-07-31T03:03:27.864538+00:00
+bd313702-289d-439b-9eee-1abaa20a6818,device_bd313702,Hadi Wijaya 43,user_43_hadi_wijaya_43@example.com,mahasiswa,2,Sistem Informasi,"[1, 3]",2026-07-30T03:03:27.864543+00:00
+33720fe8-173d-44bf-a9b1-6950cde92cd7,device_33720fe8,Rian Pratama 44,user_44_rian_pratama_44@example.com,mahasiswa,16,Pertanian / Agribisnis,"[6, 1, 2]",2026-06-18T03:03:27.864547+00:00
+9bbb3fdb-d2ce-447b-9154-2bf5e09b12c2,device_9bbb3fdb,Taufik Hidayat 45,user_45_taufik_hidayat_45@example.com,mahasiswa,8,Statistika,"[1, 4, 5]",2026-06-13T03:03:27.864551+00:00
+737eae19-bcf1-406c-99e6-3837124366d7,device_737eae19,Nurul Hidayah 46,user_46_nurul_hidayah_46@example.com,mahasiswa,4,Ilmu Komputer,"[1, 3]",2026-07-12T03:03:27.864556+00:00
+d43a4c3f-c212-42aa-9332-33282eaf11d9,device_d43a4c3f,Nurul Hidayah 47,user_47_nurul_hidayah_47@example.com,mahasiswa,2,Sistem Informasi,"[1, 3]",2026-06-23T03:03:27.864560+00:00
+31bb5897-d2f0-438f-ad8b-76d6ba2a5677,device_31bb5897,Dewi Anggraini 48,user_48_dewi_anggraini_48@example.com,mahasiswa,11,Perencanaan Wilayah & Kota (PWK),"[1, 5]",2026-07-28T03:03:27.864564+00:00
+ac1adb92-1c9b-4a21-8627-5300bf8f7067,device_ac1adb92,Hadi Wijaya 49,user_49_hadi_wijaya_49@example.com,mahasiswa,18,Pariwisata / Perhotelan,"[1, 7]",2026-07-07T03:03:27.864568+00:00
+2662ff67-620e-40ab-ae10-c0654d6abd64,device_2662ff67,Fajar Nugroho 50,user_50_fajar_nugroho_50@example.com,mahasiswa,8,Statistika,"[1, 4, 5]",2026-07-30T03:03:27.864573+00:00
