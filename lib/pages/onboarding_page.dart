@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:mboistats/theme.dart';
 import 'package:mboistats/services/recommendation_service.dart';
@@ -19,59 +20,32 @@ class _OnboardingPageState extends State<OnboardingPage> {
   final List<String> _selectedSectors = [];
   bool _isLoading = false;
   String _majorSearchQuery = '';
+  Timer? _debounceTimer;
 
-  // Daftar Jurusan Komprehensif (Single Choice Per Option)
-  final List<String> _majors = [
-    'Teknik Informatika',
-    'Ilmu Komputer',
-    'Sains Data',
-    'Sistem Informasi',
-    'Teknologi Informasi',
-    'Teknik Sipil',
-    'Perencanaan Wilayah & Kota (PWK)',
-    'Teknik Industri',
-    'Teknik Mesin',
-    'Teknik Elektro',
-    'Teknik Kimia',
-    'Teknik Lingkungan',
-    'Ekonomi Pembangunan',
-    'Ilmu Ekonomi',
-    'Manajemen',
-    'Bisnis',
-    'Kewirausahaan',
-    'Akuntansi',
-    'Keuangan',
-    'Statistika',
-    'Matematika',
-    'Fisika',
-    'Kimia',
-    'Biologi',
-    'Hukum',
-    'Ilmu Administrasi Publik',
-    'Ilmu Administrasi Bisnis',
-    'Ilmu Komunikasi',
-    'Hubungan Internasional',
-    'Sosiologi',
-    'Psikologi',
-    'Antropologi',
-    'Pendidikan / Keguruan',
-    'Pertanian',
-    'Agribisnis',
-    'Kehutanan',
-    'Peternakan',
-    'Kedokteran',
-    'Kesehatan Masyarakat',
-    'Farmasi',
-    'Keperawatan',
-    'Gizi',
-    'Pariwisata',
-    'Perhotelan',
-    'Desain Komunikasi Visual (DKV)',
-    'Arsitektur',
-    'Sastra / Bahasa',
-    'Seni & Kriya',
-    'Lainnya'
-  ];
+  // Daftar Jurusan (Single Source of Truth dari RecommendationService / Supabase)
+  List<String> _majors = RecommendationService.defaultMajorSectorMapping.keys.toList();
+
+  @override
+  void initState() {
+    super.initState();
+    _loadMajorsFromSupabase();
+  }
+
+  @override
+  void dispose() {
+    _debounceTimer?.cancel();
+    _pageController.dispose();
+    super.dispose();
+  }
+
+  Future<void> _loadMajorsFromSupabase() async {
+    final mapping = await RecommendationService.getMajorSectorMapping();
+    if (mounted && mapping.isNotEmpty) {
+      setState(() {
+        _majors = mapping.keys.toList();
+      });
+    }
+  }
 
   // Daftar Sektor & Info Label Visual
   final List<Map<String, String>> _sectors = [
@@ -334,8 +308,13 @@ class _OnboardingPageState extends State<OnboardingPage> {
           // Search Field untuk Jurusan
           TextField(
             onChanged: (val) {
-              setState(() {
-                _majorSearchQuery = val;
+              _debounceTimer?.cancel();
+              _debounceTimer = Timer(const Duration(milliseconds: 250), () {
+                if (mounted) {
+                  setState(() {
+                    _majorSearchQuery = val;
+                  });
+                }
               });
             },
             decoration: InputDecoration(
@@ -346,6 +325,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   ? IconButton(
                       icon: const Icon(Icons.clear, size: 18),
                       onPressed: () {
+                        _debounceTimer?.cancel();
                         setState(() {
                           _majorSearchQuery = '';
                         });

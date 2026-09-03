@@ -47,18 +47,17 @@ class _ProfilPageState extends State<ProfilPage> {
     }
     final major = await RecommendationService.getMajor();
     
-    // Tarik data kustomer secara Real-Time dari API Endpoint / Supabase users_buku_tamu / user_all
+    // Tarik data kustomer dari Supabase (tabel users_buku_tamu) dengan fallback ke API Endpoint
     CustomerProfileData? customerApiData;
     if (_userEmail.isNotEmpty) {
-      customerApiData = await CustomerApiService.getCustomerByEmail(_userEmail);
-      customerApiData ??= await CustomerApiService.getCustomerFromSupabase(_userEmail);
-      customerApiData ??= await CustomerApiService.getUserAllProfile(_userEmail);
+      customerApiData = await CustomerApiService.getCustomerFromSupabase(_userEmail);
+      customerApiData ??= await CustomerApiService.getCustomerByEmail(_userEmail);
     }
 
     if (mounted) {
       setState(() {
-        _userMajor = major ?? customerApiData?.majorName;
-        if (customerApiData != null && customerApiData.name != null && customerApiData.name!.isNotEmpty) {
+        _userMajor = major;
+        if (customerApiData != null && customerApiData.name != null) {
           _userName = customerApiData.name!;
         }
         _isLoadingProfile = false;

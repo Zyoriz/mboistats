@@ -2,6 +2,33 @@
 -- SKEMA DATABASE SUPABASE & ROW LEVEL SECURITY (RLS) - MBOISSTATS+ PKL
 -- Lead: Orang 1 (Data Architecture, Time Decay & User Tracking Lead)
 -- ==============================================================================
+--
+-- !! JANGAN DIJALANKAN ULANG DI SQL EDITOR SUPABASE !!
+--
+-- Status per 2 Sep 2026: seluruh tabel di bawah SUDAH ADA dan SUDAH BERISI
+-- data live di project Supabase (nramd/mboistats). File ini murni DOKUMENTASI
+-- REFERENSI (struktur skema + seed data yang sudah diverifikasi cocok
+-- dengan export CSV live), bukan skrip migrasi yang harus/boleh dieksekusi.
+--
+-- Alasan tidak boleh dijalankan ulang:
+--   1. RLS di project ini saat ini DISABLED pada tabel-tabel utama
+--      (dicek langsung di dashboard: Database > Policies, 2 Sep 2026).
+--      Policy INSERT/SELECT/DELETE yang benar-benar aktif sekarang punya
+--      nama berbeda (bahasa Indonesia, mis. "Izinkan Insert Log Publik")
+--      dari yang didefinisikan di file ini -- artinya file ini TIDAK PERNAH
+--      dieksekusi terhadap project ini sebelumnya.
+--   2. CREATE POLICY di bawah akan ERROR jika policy dengan nama sama
+--      sudah ada di database.
+--   3. Blok INSERT ... ON CONFLICT DO UPDATE pada tabel master (categories,
+--      major, major_recommendations) akan MENIMPA data live jika value-nya
+--      berbeda dari yang sudah ada.
+--
+-- Nilai seed di bawah (categories, major, major_recommendations) sudah
+-- disinkronkan ulang agar identik dengan hasil export live CSV per 2 Sep 2026
+-- (categories_rows.csv / major_rows.csv / major_recommendations_rows.csv),
+-- menggantikan versi awal yang salah (ID sektor 2/3/4 tertukar, dan daftar
+-- major berisi 20 jurusan buatan yang tidak cocok dengan 50 jurusan resmi).
+-- ==============================================================================
 
 -- 1. TABEL MASTER KATEGORI SEKTORAL (7 Sektor Utama BPS Kota Malang)
 CREATE TABLE IF NOT EXISTS public.categories (
@@ -9,21 +36,16 @@ CREATE TABLE IF NOT EXISTS public.categories (
   category TEXT NOT NULL UNIQUE
 );
 
--- Seed Data 7 Sektor Utama
+-- CATEGORIES (exact values from categories_rows.csv, 7 rows)
 INSERT INTO public.categories (id_category, category) VALUES
-  (1, 'Perekonomian'),
-  (2, 'Kemiskinan'),
-  (3, 'Ketenagakerjaan'),
-  (4, 'IPM'),
-  (5, 'Kependudukan'),
-  (6, 'Pertanian'),
-  (7, 'Kesejahteraan')
-ON CONFLICT (id_category) DO UPDATE 
-SET category = EXCLUDED.category;
-
--- Reset sequence id_category
-SELECT setval('categories_id_category_seq', (SELECT MAX(id_category) FROM public.categories));
-
+  (1, 'perekonomian'),
+  (2, 'tenaga_kerja'),
+  (3, 'ipm'),
+  (4, 'kemiskinan'),
+  (5, 'kependudukan'),
+  (6, 'pertanian'),
+  (7, 'kesejahteraan')
+ON CONFLICT (id_category) DO UPDATE SET category = EXCLUDED.category;
 
 -- 2. TABEL MASTER JURUSAN (MAJOR)
 CREATE TABLE IF NOT EXISTS public.major (
@@ -31,33 +53,59 @@ CREATE TABLE IF NOT EXISTS public.major (
   major TEXT NOT NULL UNIQUE
 );
 
--- Seed Data Master Jurusan
+-- MAJOR (exact values from major_rows.csv, 50 rows)
 INSERT INTO public.major (id_major, major) VALUES
   (1, 'Teknik Informatika'),
-  (2, 'Sistem Informasi'),
+  (2, 'Ilmu Komputer'),
   (3, 'Sains Data'),
-  (4, 'Ilmu Komputer'),
-  (5, 'Ekonomi Pembangunan'),
-  (6, 'Manajemen'),
-  (7, 'Akuntansi'),
-  (8, 'Statistika'),
-  (9, 'Matematika'),
-  (10, 'Teknik Sipil'),
-  (11, 'Perencanaan Wilayah & Kota (PWK)'),
-  (12, 'Ilmu Komunikasi'),
-  (13, 'Administrasi Publik'),
-  (14, 'Sosiologi'),
-  (15, 'Pendidikan / Keguruan'),
-  (16, 'Pertanian / Agribisnis'),
-  (17, 'Kesehatan Masyarakat / Kedokteran'),
-  (18, 'Pariwisata / Perhotelan'),
-  (19, 'Hukum'),
-  (20, 'Umum / Lainnya')
-ON CONFLICT (id_major) DO UPDATE 
-SET major = EXCLUDED.major;
-
-SELECT setval('major_id_major_seq', (SELECT MAX(id_major) FROM public.major));
-
+  (4, 'Sistem Informasi'),
+  (5, 'Teknologi Informasi'),
+  (6, 'Teknik Sipil'),
+  (7, 'Perencanaan Wilayah & Kota (PWK)'),
+  (8, 'Teknik Industri'),
+  (9, 'Teknik Mesin'),
+  (10, 'Teknik Elektro'),
+  (11, 'Teknik Kimia'),
+  (12, 'Teknik Lingkungan'),
+  (13, 'Ekonomi Pembangunan'),
+  (14, 'Ilmu Ekonomi'),
+  (15, 'Manajemen'),
+  (16, 'Bisnis'),
+  (17, 'Kewirausahaan'),
+  (18, 'Akuntansi'),
+  (19, 'Keuangan'),
+  (20, 'Statistika'),
+  (21, 'Matematika'),
+  (22, 'Fisika'),
+  (23, 'Kimia'),
+  (24, 'Biologi'),
+  (25, 'Hukum'),
+  (26, 'Ilmu Administrasi Publik'),
+  (27, 'Ilmu Administrasi Bisnis'),
+  (28, 'Ilmu Komunikasi'),
+  (29, 'Hubungan Internasional'),
+  (30, 'Sosiologi'),
+  (31, 'Psikologi'),
+  (32, 'Antropologi'),
+  (33, 'Pendidikan / Keguruan'),
+  (34, 'Pertanian'),
+  (35, 'Agribisnis'),
+  (36, 'Kehutanan'),
+  (37, 'Peternakan'),
+  (38, 'Kedokteran'),
+  (39, 'Kesehatan Masyarakat'),
+  (40, 'Farmasi'),
+  (41, 'Keperawatan'),
+  (42, 'Gizi'),
+  (43, 'Pariwisata'),
+  (44, 'Perhotelan'),
+  (45, 'Desain Komunikasi Visual (DKV)'),
+  (46, 'Arsitektur'),
+  (47, 'Sastra / Bahasa'),
+  (48, 'Seni & Kriya'),
+  (49, 'Lainnya'),
+  (50, 'Umum')
+ON CONFLICT (id_major) DO UPDATE SET major = EXCLUDED.major;
 
 -- 3. TABEL PEMETAAN JURUSAN KE KATEGORI REKOMENDASI (Smart Default Onboarding)
 CREATE TABLE IF NOT EXISTS public.major_recommendations (
@@ -67,29 +115,122 @@ CREATE TABLE IF NOT EXISTS public.major_recommendations (
   CONSTRAINT uq_major_category UNIQUE (major_id, category_id)
 );
 
--- Seed Pemetaan Relevansi Jurusan -> Kategori Sektor
--- ID Kategori: 1:Ekonomi, 2:Kemiskinan, 3:TenagaKerja, 4:IPM, 5:Penduduk, 6:Pertanian, 7:Kesejahteraan
+-- MAJOR_RECOMMENDATIONS (exact values from major_recommendations_rows.csv, 114 rows)
 INSERT INTO public.major_recommendations (major_id, category_id) VALUES
-  (1, 1), (1, 3),        -- TI -> Perekonomian, Ketenagakerjaan
-  (2, 1), (2, 3),        -- SI -> Perekonomian, Ketenagakerjaan
-  (3, 1), (3, 4), (3, 2),-- Sains Data -> Perekonomian, IPM, Kemiskinan
-  (4, 1), (4, 3),        -- Ilmu Komputer -> Perekonomian, Ketenagakerjaan
-  (5, 1), (5, 2), (5, 7),-- Ekonomi -> Perekonomian, Kemiskinan, Kesejahteraan
-  (6, 1), (6, 3), (6, 7),-- Manajemen -> Perekonomian, Ketenagakerjaan, Kesejahteraan
-  (7, 1), (7, 7),        -- Akuntansi -> Perekonomian, Kesejahteraan
-  (8, 1), (8, 4), (8, 5),-- Statistika -> Perekonomian, IPM, Kependudukan
-  (9, 1), (9, 4),        -- Matematika -> Perekonomian, IPM
-  (10, 1), (10, 5),      -- Teknik Sipil -> Perekonomian, Kependudukan
-  (11, 1), (11, 5),      -- PWK -> Perekonomian, Kependudukan
-  (12, 5), (12, 7),      -- Komunikasi -> Kependudukan, Kesejahteraan
-  (13, 2), (13, 4), (13, 7), -- Adm Publik -> Kemiskinan, IPM, Kesejahteraan
-  (14, 2), (14, 5), (14, 7), -- Sosiologi -> Kemiskinan, Kependudukan, Kesejahteraan
-  (15, 4), (15, 7),      -- Pendidikan -> IPM, Kesejahteraan
-  (16, 6), (16, 1),      -- Pertanian -> Pertanian, Perekonomian
-  (17, 4), (17, 7),      -- Kesehatan -> IPM, Kesejahteraan
-  (18, 1), (18, 7),      -- Pariwisata -> Perekonomian, Kesejahteraan
-  (19, 2), (19, 7),      -- Hukum -> Kemiskinan, Kesejahteraan
-  (20, 1), (20, 5)       -- Umum -> Perekonomian, Kependudukan
+  (50, 1),
+  (49, 1),
+  (48, 1),
+  (46, 1),
+  (45, 1),
+  (44, 1),
+  (43, 1),
+  (37, 1),
+  (36, 1),
+  (35, 1),
+  (34, 1),
+  (29, 1),
+  (27, 1),
+  (23, 1),
+  (22, 1),
+  (21, 1),
+  (20, 1),
+  (19, 1),
+  (18, 1),
+  (17, 1),
+  (16, 1),
+  (15, 1),
+  (14, 1),
+  (13, 1),
+  (12, 1),
+  (11, 1),
+  (10, 1),
+  (9, 1),
+  (8, 1),
+  (7, 1),
+  (6, 1),
+  (5, 1),
+  (4, 1),
+  (3, 1),
+  (2, 1),
+  (1, 1),
+  (45, 2),
+  (44, 2),
+  (27, 2),
+  (17, 2),
+  (16, 2),
+  (15, 2),
+  (11, 2),
+  (10, 2),
+  (9, 2),
+  (8, 2),
+  (5, 2),
+  (4, 2),
+  (2, 2),
+  (1, 2),
+  (47, 3),
+  (42, 3),
+  (41, 3),
+  (40, 3),
+  (39, 3),
+  (38, 3),
+  (33, 3),
+  (31, 3),
+  (24, 3),
+  (23, 3),
+  (22, 3),
+  (21, 3),
+  (20, 3),
+  (12, 3),
+  (3, 3),
+  (42, 4),
+  (39, 4),
+  (32, 4),
+  (30, 4),
+  (26, 4),
+  (25, 4),
+  (20, 4),
+  (14, 4),
+  (13, 4),
+  (7, 4),
+  (3, 4),
+  (50, 5),
+  (49, 5),
+  (47, 5),
+  (46, 5),
+  (32, 5),
+  (30, 5),
+  (29, 5),
+  (28, 5),
+  (26, 5),
+  (25, 5),
+  (12, 5),
+  (7, 5),
+  (6, 5),
+  (37, 6),
+  (36, 6),
+  (35, 6),
+  (34, 6),
+  (24, 6),
+  (48, 7),
+  (43, 7),
+  (42, 7),
+  (41, 7),
+  (40, 7),
+  (39, 7),
+  (38, 7),
+  (33, 7),
+  (32, 7),
+  (31, 7),
+  (30, 7),
+  (28, 7),
+  (26, 7),
+  (25, 7),
+  (19, 7),
+  (18, 7),
+  (16, 7),
+  (15, 7),
+  (14, 7),
+  (13, 7)
 ON CONFLICT DO NOTHING;
 
 

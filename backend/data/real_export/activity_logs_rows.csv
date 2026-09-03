@@ -1,0 +1,266 @@
+id,action_type,title,platform,user_id,timestamp,contents_id_content,youtube_streams_id_streams,category_id,module_name
+0043f84a-42d5-4a9d-a599-22539b15ef37,login_failed,"Supabase AuthException: {""code"":""unexpected_failure"",""message"":""Database error saving new user""}",android,,2026-08-26 04:35:57.468372+00,,,,auth
+00482ee6-b3af-4ccf-8a33-b967ae16b384,view_page,Tingkat Pengangguran,ios,testessl846@gmail.com,2026-08-20 01:22:01.431723+00,,,2,fitur
+0056c563-894e-4366-a972-777bbf8148fa,view_pdf,Produk Domestik Regional Bruto Kota Malang Menurut Pengeluaran 2021–2025,ios,testessl846@gmail.com,2026-08-20 04:12:28.658488+00,,,7,fitur
+049d4c3a-ab29-471e-8580-a14348d21c2d,view_page,Tingkat Pengangguran,ios,testessl846@gmail.com,2026-08-19 17:17:19.020623+00,,,2,fitur
+05d0b1c8-5c5b-476a-9279-392633ddb92e,view_page,Halaman Login,android,,2026-08-26 04:35:53.20714+00,,,,auth
+06565a1f-b9c7-4d11-a946-c8db4e9a6ef6,view_page,Produktivitas Padi,ios,testessl846@gmail.com,2026-08-20 02:57:53.160791+00,,,6,fitur
+072d8d29-f336-4701-96bc-e62dc4ac70e7,login_success,Login Google Sukses,ios,testessl846@gmail.com,2026-08-19 17:15:31.992846+00,,,,auth
+086d6543-4ac2-443d-9a19-8c569b7cff72,view_page,Inflasi Tahun Kalender,ios,testessl846@gmail.com,2026-08-20 03:04:22.675458+00,,,1,fitur
+090853a3-e20f-4765-aa1c-3cbaacacf859,view_page,Tingkat Pengangguran,ios,testessl846@gmail.com,2026-08-20 01:57:47.898325+00,,,2,fitur
+09ddecd8-8039-4398-b648-f19adb44ce74,download_file,Produk Domestik Regional Bruto Kota Malang Menurut Pengeluaran 2021–2025,ios,testessl846@gmail.com,2026-08-20 04:43:32.304537+00,,,7,fitur
+0bbcbe42-bfd7-4e8d-9c6c-85353512e442,view_page,Pertanian,ios,testessl846@gmail.com,2026-08-20 08:30:14.89035+00,,,6,fitur
+0c0e3e93-f811-4199-a7aa-2bd888b1da48,view_page,Angkatan Kerja Menurut Pendidikan,ios,testessl846@gmail.com,2026-08-20 01:22:03.587309+00,,,2,fitur
+0e0e2870-e3f1-4fd1-aff9-7cd765cffe08,view_page,Produk Domestik Regional Bruto (PDRB),ios,testessl846@gmail.com,2026-08-20 07:24:12.643763+00,,,1,fitur
+0e2bd455-a4d4-479d-8052-de9a97daced5,view_page,Angkatan Kerja Menurut Pendidikan,ios,testessl846@gmail.com,2026-08-20 02:10:08.094671+00,,,2,fitur
+10e59936-ac42-4ce5-b269-6feb4ce294b9,view_pdf,"Tingkat Penghunian Tingkat Penghunian Kamar Hotel di Kota Malang Tembus 48,57 Persen Selama Musim Libur Sekolah Juni 2026",ios,testessl846@gmail.com,2026-08-20 08:17:26.517881+00,,,1,fitur
+124ca14f-1568-4eda-a941-7e54457cd719,view_pdf,Luas Panen dan Produksi Padidi Kota Malang 2025 (Angka Tetap),ios,testessl846@gmail.com,2026-08-20 04:41:40.680989+00,,,6,fitur
+12f59530-772c-4170-9c9a-efdbf4825541,download_file,Infografis ST2023 - I Kota Malang,ios,testessl846@gmail.com,2026-08-20 04:05:13.568221+00,,,,infografis
+133f29c2-4506-4d82-b710-d57736407dde,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 02:55:54.005195+00,,,,berita
+13553d21-6ab1-4b2f-b374-8dfee6d6e2fa,login_success,Login Google Native Sukses,android,20tttttttttttt@gmail.com,2026-08-27 05:16:25.924988+00,,,,auth
+15458aae-6157-4147-88e2-0a3ebefd0ad0,view_pdf,Inflasi Kota Malang 2025,android,20tttttttttttt@gmail.com,2026-08-27 07:35:48.786942+00,,,1,fitur
+15df28e4-cec1-4896-bba6-c6683607019d,view_page,Halaman Profil,android,20tttttttttttt@gmail.com,2026-08-31 06:46:48.074955+00,,,,profil
+17dd30c8-7c42-463b-9ffa-0344f5a6e8c5,view_pdf,Inflasi Kota Malang 2025,ios,testessl846@gmail.com,2026-08-20 04:06:05.017375+00,,,1,fitur
+19cbf8bb-548e-4df6-b418-66f80d374821,view_page,Halaman Profil,ios,testessl846@gmail.com,2026-08-20 07:22:22.636144+00,,,,profil
+1b0e329b-04e1-40d6-943e-14756be1f3c2,view_publikasi_list,Temukan Publikasi lainnya,ios,testessl846@gmail.com,2026-08-20 04:06:20.372877+00,,,,publikasi
+1fd39301-0893-4053-9cf9-22529b812e00,view_infografis_list,Temukan Infografis lainnya,ios,testessl846@gmail.com,2026-08-19 17:19:36.295053+00,,,,infografis
+1fe64cb5-5da0-47f6-832a-dcc00538e7a2,view_page,Halaman Login,android,,2026-08-26 03:58:20.28862+00,,,,auth
+21738313-7bc3-464a-b315-693b46e16c8c,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 02:04:27.148714+00,,,,berita
+234fc65e-d18e-4b28-be91-134be7523418,view_pdf,Luas Panen dan Produksi Padidi Kota Malang 2025 (Angka Tetap),ios,testessl846@gmail.com,2026-08-21 08:24:23.555712+00,,,6,fitur
+238d69e9-bcc2-4f85-ab90-451844d19cb7,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 02:57:59.825744+00,,,,berita
+24af5336-9df5-4e79-8b9e-395e6b93e0cf,view_page,Luas Panen Padi,ios,testessl846@gmail.com,2026-08-20 02:57:50.962011+00,,,6,fitur
+253715cf-f2da-44ea-9bff-6bbf55b216b0,view_pdf,"Tingkat Penghunian Tingkat Penghunian Kamar Hotel di Kota Malang Tembus 48,57 Persen Selama Musim Libur Sekolah Juni 2026",ios,testessl846@gmail.com,2026-08-20 08:29:16.766496+00,,,1,fitur
+25a36137-5d46-4a98-a040-b75f31cc82b9,view_pdf,"Pada Tahun 2024, Luas Panen Padi di Kota Malang sebesar 1.610,91 hektar dan produksi padi sebanyak 10.496,55 ton gabah kering giling (GKG).",ios,testessl846@gmail.com,2026-08-20 02:58:11.054113+00,,,6,fitur
+2650ff34-1818-4edd-96f1-33a5ce81d727,click_login_google,Masuk dengan Google (Native),android,,2026-08-26 04:36:21.429582+00,,,,auth
+268c3f1d-dd1f-40a1-a5be-8583bb4cbaaa,view_page,IPM,ios,testessl846@gmail.com,2026-08-20 07:28:56.860986+00,,,3,fitur
+279a9ce0-2aeb-42ec-ba69-0ce85504b6b7,view_pdf,Profil Kemiskinan Kota Malang Tahun 2024,ios,testessl846@gmail.com,2026-08-19 17:18:28.263242+00,,,4,fitur
+27f756d8-b0ef-4a1a-984a-0736e93d3c0d,view_page,Tenaga Kerja,ios,testessl846@gmail.com,2026-08-20 15:11:51.172198+00,,,2,fitur
+2a0a468d-699f-4802-bd1d-96a7d4f0e4fa,view_pdf,Luas Panen dan Produksi Padidi Kota Malang 2025 (Angka Tetap),ios,testessl846@gmail.com,2026-08-20 02:58:03.191473+00,,,6,fitur
+2b41f997-c3a3-4cfd-9741-29bbc5e4ae44,view_pdf,"Tingkat Penghunian Kamar (TPK) Hotel Kota Malang Bulan April 2026 Mencapai 40,69 persen",ios,testessl846@gmail.com,2026-08-20 04:42:51.128633+00,,,1,fitur
+2b74eb94-2ef5-433b-8137-11964832cbe5,view_infografis_list,Temukan Infografis lainnya,android,20tttttttttttt@gmail.com,2026-08-27 07:18:55.89689+00,,,,infografis
+2d02e405-b7ae-48d9-b79f-5db079fa00cb,view_pdf,Produk Domestik Regional Bruto Kota Malang Menurut Pengeluaran 2021–2025,ios,testessl846@gmail.com,2026-08-20 04:06:09.187123+00,,,7,fitur
+2d97243f-5c6a-4d17-b80b-cbab3ab38b28,view_page,Penduduk Bekerja (IPM),ios,testessl846@gmail.com,2026-08-20 02:04:59.480789+00,,,3,fitur
+302ae5be-beeb-4b2b-af53-b37055cdd284,view_publikasi_list,Temukan Publikasi lainnya,ios,testessl846@gmail.com,2026-08-20 02:56:52.451929+00,,,,publikasi
+325502ed-1a3d-4f01-a441-de1bc9677e74,view_pdf,Produk Domestik Regional Bruto Kota Malang Menurut Pengeluaran 2021–2025,ios,testessl846@gmail.com,2026-08-20 04:06:21.326843+00,,,7,fitur
+33416339-b2dd-4e1b-93cd-dffb15d4c24b,download_file,Infografis ST2023 - I Kota Malang,ios,testessl846@gmail.com,2026-08-20 04:42:43.483583+00,,,,berita
+34e8ff25-daec-4d42-9097-cb8a040371eb,view_pdf,Analisis Hasil Survei Kebutuhan Data BPS Kota Malang 2025,ios,testessl846@gmail.com,2026-08-20 04:05:46.298936+00,,,,berita
+367b0726-6478-40af-ace9-643ce878e19b,view_page,Daya Beli,ios,testessl846@gmail.com,2026-08-19 17:19:32.043563+00,,,3,fitur
+37a365e4-3c1c-42fe-9bd2-2e63ebef4876,view_pdf,"Keadaan Ketenagakerjaan Kota Malang, Agustus 2020",ios,testessl846@gmail.com,2026-08-20 02:10:29.12456+00,,,2,fitur
+37ce40c0-e3a5-481b-a6a6-456a9b75d49b,view_page,IPM,ios,testessl846@gmail.com,2026-08-20 15:24:40.461514+00,,,3,fitur
+387d2f48-2c20-4f4e-92de-2b71f803a99d,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 04:41:36.885783+00,,,,berita
+38844dd9-b60b-4661-a55a-ab82684e2025,download_file,"Tingkat Penghunian Kamar (TPK) Hotel Kota Malang tembus 40,51 persen pada Januari 2026(1)2026-03-02",android,20tttttttttttt@gmail.com,2026-08-27 07:19:16.001082+00,,,1,fitur
+3af58858-dd97-41a3-994e-18cfeb7b649f,view_pdf,Luas Panen dan Produksi Padi di Kota Malang Tahun 2024(1),ios,testessl846@gmail.com,2026-08-20 02:58:44.248098+00,,,6,fitur
+3c83a6d9-41f2-46ac-8f67-2440bea0340e,login_success,Login Google Sukses,android,20tttttttttttt@gmail.com,2026-08-31 06:43:04.795022+00,,,,auth
+3feb622a-6e2c-4c42-87fb-b4f7534596f1,view_pdf,Produk Domestik Regional Bruto Kota Malang Menurut Lapangan Usaha 2021–2025,ios,testessl846@gmail.com,2026-08-20 04:05:29.48028+00,,,1,fitur
+4297b4bd-86b8-461b-85ee-5ed725e09b60,view_youtube_list,Lihat arsip Live Youtube,ios,testessl846@gmail.com,2026-08-20 02:11:57.896597+00,,,,youtube
+4356fb9f-1baf-4f73-b0c7-838401436791,view_pdf,Statistik Hortikultura Kota Malang 2023,ios,testessl846@gmail.com,2026-08-20 02:58:54.502721+00,,,6,fitur
+43dc2341-c5f9-4304-a038-e2fb2398c4da,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 02:06:30.67045+00,,,,berita
+44535f64-0886-4be3-a3bb-cd658433a19e,view_pdf,"Mei 2026 Kota Malang  inflasi Year-on-Year (y-on-y) sebesar 3,1 persen(1)2026-06-02",ios,testessl846@gmail.com,2026-08-19 17:19:48.983546+00,,,1,fitur
+4493fbc1-0dc0-4794-8c35-6d9ccf0e992c,view_page,Tenaga Kerja,ios,testessl846@gmail.com,2026-08-20 07:28:47.505244+00,,,2,fitur
+44d8c6a6-2393-4ac0-b890-e750ee663513,click_login_google,Masuk dengan Google (Native),android,,2026-08-26 04:34:56.789304+00,,,,auth
+44f43a46-25bf-445e-9619-adeaa1e559e3,view_page,Inflasi Bulanan,ios,testessl846@gmail.com,2026-08-20 07:22:50.568691+00,,,1,fitur
+45177bbc-d4de-43bb-9288-4633db042ed0,login_success,Login Google Sukses,android,jonathansalim2204@gmail.com,2026-08-26 04:36:23.609814+00,,,,auth
+451969d3-b354-4be8-b219-4a170ab0aa25,view_pdf,"Tingkat Penghunian Kamar (TPK) Hotel Kota Malang Bulan Mei 2026 Mencapai 43,48 persen",ios,testessl846@gmail.com,2026-08-20 04:42:10.819118+00,,,1,fitur
+4584d467-d8fa-4853-9cae-acaa52b88136,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 01:52:34.873806+00,,,,berita
+4885a029-0f93-468b-855e-924108ea7a0d,login_success,Login Google Native Sukses,ios,testessl846@gmail.com,2026-08-19 17:15:32.070794+00,,,,auth
+4941c9d4-6ee7-425f-b9fa-ca8346f65605,click_login_google,Masuk dengan Google (Native),ios,,2026-08-19 17:15:12.9069+00,,,,auth
+4968535b-4e37-43fa-864c-b81d91e0ffe5,view_page,Halaman Profil,ios,testessl846@gmail.com,2026-08-20 06:59:39.427361+00,,,,profil
+49b09615-5a4b-48c0-b976-ea45dd29e5c4,view_page,Luas Panen Padi,ios,testessl846@gmail.com,2026-08-20 07:22:54.957909+00,,,6,fitur
+49cde2d2-8872-44ed-ac5f-9ebd763c8f1c,view_pdf,Infografis ST2023 - I Kota Malang,ios,testessl846@gmail.com,2026-08-20 04:05:11.607703+00,,,,berita
+4b8c5abc-5590-4846-86c3-0f9993bcb97b,login_success,Login Google Sukses,android,20tttttttttttt@gmail.com,2026-08-27 05:16:25.878085+00,,,,auth
+4c2259d5-0001-447c-87bf-9dfc6ffbe7c1,view_infografis_list,Temukan Infografis lainnya,ios,testessl846@gmail.com,2026-08-20 04:05:10.466423+00,,,,infografis
+4c6cf13b-5fbe-4879-9863-2080b1830f95,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 02:05:02.933667+00,,,,berita
+4c879036-0c1e-4743-a4d0-ca074c04edee,view_pdf,"Tingkat Penghunian Tingkat Penghunian Kamar Hotel di Kota Malang Tembus 48,57 Persen Selama Musim Libur Sekolah Juni 2026",ios,testessl846@gmail.com,2026-08-20 04:41:43.731335+00,,,1,fitur
+4c966b69-ba05-4933-a6e9-dec5f19c2544,download_file,"Luas Panen dan Produksi Padi di Kota Malang (Angka Sementara, Hasil KSA Amatan September 2(1)2025-11-25",ios,testessl846@gmail.com,2026-08-20 04:11:08.713319+00,,,,infografis
+4d4688d5-4865-42b6-9eb5-832778c33582,view_pdf,"Juli 2026 Inflasi Year on Year (y-on-y) Kota Malang sebesar 2,83  persen",ios,testessl846@gmail.com,2026-08-20 04:02:05.373023+00,,,1,fitur
+4d72c912-76db-44e2-81e1-5ce04bd95c4a,view_pdf,"Juni 2026 Inflasi Year on Year (y-on-y) Kota Malang sebesar 3,16 persen.",ios,testessl846@gmail.com,2026-08-20 04:41:55.361825+00,,,1,fitur
+4e15b400-c503-4f1d-a3a8-8970bfc3ff88,view_pdf,Luas Panen dan Produksi Padidi Kota Malang 2025 (Angka Tetap)(1)2026-03-09,ios,testessl846@gmail.com,2026-08-20 02:58:37.220253+00,,,6,fitur
+4f47836b-66de-4cd3-8049-17120ddded3d,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 17:50:19.966799+00,,,,berita
+5302f3c5-ae18-474b-9eca-78865191a6fb,view_page,Tenaga Kerja,ios,testessl846@gmail.com,2026-08-19 17:17:16.904644+00,,,2,fitur
+53e8be7d-7814-4f4a-9a9b-dc0fd3736f65,view_page,Produksi Padi,ios,testessl846@gmail.com,2026-08-20 08:30:16.997542+00,,,6,fitur
+549b47cb-6db3-471b-96da-9d7208071884,view_pdf,Luas Panen dan Produksi Padi Kota Malang 2023,ios,testessl846@gmail.com,2026-08-20 04:44:24.004616+00,,,6,fitur
+56d25e92-dbe6-4140-b8e3-91e34406fdf7,view_page,Laju Pertumbuhan Ekonomi,ios,testessl846@gmail.com,2026-08-20 02:10:41.366642+00,,,1,fitur
+5772695f-7c79-4da6-932a-74ae022b06e8,view_publikasi_list,Temukan Publikasi lainnya,ios,testessl846@gmail.com,2026-08-20 02:11:10.887856+00,,,,publikasi
+585ee2fc-850f-492c-9b9c-b5ee1dd75986,view_page,Halaman Login,android,,2026-08-21 06:49:43.941054+00,,,,auth
+58d94f2a-81c1-4abe-b9c4-ce357b9c5a9f,view_pdf,Kota Malang Dalam Angka 2026,ios,testessl846@gmail.com,2026-08-20 04:05:34.216306+00,,,5,fitur
+5a37dbd0-6016-483f-b09f-d81d3a8dbf34,view_page,Inflasi Bulanan,ios,testessl846@gmail.com,2026-08-20 03:04:24.606314+00,,,1,fitur
+5b2f0782-5310-48ed-9d59-5cd2819630ad,view_pdf,Produk Domestik Regional Bruto Kota Malang Menurut Pengeluaran 2021–2025,ios,testessl846@gmail.com,2026-08-20 08:29:39.624771+00,,,7,fitur
+5c02df3c-5927-4b73-b599-30fae7f11f20,download_file,"Tingkat Penghunian Tingkat Penghunian Kamar Hotel di Kota Malang Tembus 48,57 Persen Selama Musim Libur Sekolah Juni 2026",ios,testessl846@gmail.com,2026-08-20 04:04:57.107838+00,,,1,fitur
+5cb4f57b-9db7-4f43-a504-19025d2aa0d3,view_pdf,Inflasi Kota Malang 2025,ios,testessl846@gmail.com,2026-08-20 04:11:56.315891+00,,,1,fitur
+5d4b44d3-d6a9-4384-84bf-a1d97554893a,view_pdf,Standar Pelayanan-Penjualan Produk BPS,ios,testessl846@gmail.com,2026-08-20 04:09:47.312694+00,,,,berita
+5e108e17-425e-45c8-a797-6877487d2d3a,view_pdf,"Tingkat Penghunian Kamar (TPK) Hotel Kota Malang Bulan Mei 2026 Mencapai 43,48 persen(1)2026-07-01",ios,testessl846@gmail.com,2026-08-20 04:46:35.239487+00,,,1,fitur
+609655d5-add5-4127-ab30-0a4efcc0b896,click_login_google,Masuk dengan Google (Native),android,,2026-08-26 04:36:04.401918+00,,,,auth
+61bc3141-776a-41fb-8726-93a36ffb4d6c,view_pdf,"Tingkat Penghunian Kamar (TPK) Hotel Kota Malang Bulan Mei 2026 Mencapai 43,48 persen(1)2026-07-01",ios,testessl846@gmail.com,2026-08-20 04:44:39.007398+00,,,1,fitur
+636887c1-da3c-47f2-af58-5a61711b7ed5,view_pdf,"Tingkat Penghunian Kamar (TPK) Hotel Kota Malang Bulan Mei 2026 Mencapai 43,48 persen(1)2026-07-01",ios,testessl846@gmail.com,2026-08-20 04:44:42.879583+00,,,1,fitur
+63727b24-ec4d-499a-98e3-b307ebab2a97,click_login_google,Masuk dengan Google (Native),android,,2026-08-27 05:15:58.47309+00,,,,auth
+637f9241-3638-4357-b357-09ba47eb13c0,view_page,Indeks Keparahan Kemiskinan,ios,testessl846@gmail.com,2026-08-20 07:24:25.769228+00,,,4,fitur
+63c09960-87e3-486e-9f4a-d0960d68592a,view_page,Perekonomian,ios,testessl846@gmail.com,2026-08-20 17:58:08.675804+00,,,1,fitur
+646b38d8-106d-4543-887a-fbe50122cda1,view_page,Deteksi Dini Inflasi,ios,testessl846@gmail.com,2026-08-20 03:04:26.240456+00,,,1,fitur
+64bf1c3e-2dfe-4971-ac47-ff178bba0a34,view_pdf,Produk Domestik Regional Bruto Kota Malang Menurut Pengeluaran 2021–2025,ios,testessl846@gmail.com,2026-08-20 04:43:24.646518+00,,,7,fitur
+685b7b48-e8b0-4bdd-9454-768caa10bbde,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 08:29:13.879794+00,,,,berita
+687e4a67-d8db-40fa-a9a1-3cfa901d4fa3,view_brs_list,Temukan BRS lainnya,android,20tttttttttttt@gmail.com,2026-08-31 06:46:25.369625+00,,,,berita
+68a8b97c-de10-4236-b7d6-6214920a4b7a,view_pdf,Jumlah Angkatan Kerja Kota Malang pada Agustus 2025 sebanyak 486.794 orang,ios,testessl846@gmail.com,2026-08-20 01:52:40.396627+00,,,2,fitur
+69f71230-2d1e-4752-a822-f0743618c22b,view_page,Pertanian,ios,testessl846@gmail.com,2026-08-20 02:57:47.941452+00,,,6,fitur
+6b5c18d3-1229-406a-9e48-56d5c5a854ab,view_pdf,"Pada Tahun 2024, Luas Panen Padi di Kota Malang sebesar 1.610,91 hektar dan produksi padi sebanyak 10.496,55 ton gabah kering giling (GKG).",ios,testessl846@gmail.com,2026-08-20 02:56:05.001417+00,,,6,fitur
+6db4ec70-7b94-4f61-9060-cd6113e9970d,login_success,Login Google Sukses,android,jonathansalim2204@gmail.com,2026-08-26 04:36:23.628502+00,,,,auth
+6e88dd48-acb5-45ec-a236-a9d8ff77c910,view_page,Halaman Profil,ios,testessl846@gmail.com,2026-08-20 07:22:09.254531+00,,,,profil
+6edd86c9-6866-4fcb-89f0-b54a67caa254,view_pdf,Luas Panen dan Produksi Padi di Kota Malang 2024,ios,testessl846@gmail.com,2026-08-20 02:58:49.635467+00,,,6,fitur
+701bf952-368b-4d17-9b2e-cfe20331ca14,view_pdf,Luas Panen dan Produksi Padidi Kota Malang 2025 (Angka Tetap),ios,testessl846@gmail.com,2026-08-20 08:29:25.898512+00,,,6,fitur
+70470587-cac2-4389-93d6-3e832a61eb62,view_pdf,Kota Malang Dalam Angka 2026,ios,testessl846@gmail.com,2026-08-20 04:43:11.113463+00,,,5,fitur
+70e74a59-b33e-4226-895d-a018a835f406,view_youtube,Gladi resik Rilis,android,20tttttttttttt@gmail.com,2026-08-31 07:19:04.898287+00,,,,youtube
+71c5e57c-738b-4aec-85c2-86a44811730d,view_pdf,Produk Domestik Regional Bruto Kota Malang Menurut Pengeluaran 2021–2025,ios,testessl846@gmail.com,2026-08-20 04:43:00.528705+00,,,7,fitur
+75776a85-64fb-4793-a196-f5ac4c851a1c,download_file,Infografis ST2023 - I Kota Malang,ios,testessl846@gmail.com,2026-08-20 04:09:57.079714+00,,,,berita
+7625d61e-a88a-40ac-863e-cefad7803ba9,view_page,Halaman Profil,ios,testessl846@gmail.com,2026-08-20 07:28:40.48349+00,,,,profil
+76645049-8554-45a0-b679-68e3e8f698ee,view_pdf,"Tingkat Penghunian Kamar (TPK) Hotel Kota Malang Bulan Mei 2026 Mencapai 43,48 persen(1)2026-07-01",ios,testessl846@gmail.com,2026-08-20 04:44:27.683861+00,,,1,fitur
+786c51e9-5545-499e-8a51-c9c4a06b7f7f,view_page,Perekonomian,ios,testessl846@gmail.com,2026-08-20 03:04:18.52358+00,,,1,fitur
+78f5a001-f076-4aee-9067-665a83bf995c,download_file,Standar Pelayanan-Penjualan Produk BPS,ios,testessl846@gmail.com,2026-08-20 08:29:31.963187+00,,,,berita
+7952716d-eecc-4407-a7ce-79eb814e6224,view_page,IPM,ios,testessl846@gmail.com,2026-08-20 02:57:12.70532+00,,,3,fitur
+796b6151-9ec0-44ea-a82a-79ecba9dfec7,view_pdf,Produk Domestik Regional Bruto Kota Malang Menurut Pengeluaran 2021–2025,ios,testessl846@gmail.com,2026-08-20 04:11:48.81851+00,,,7,fitur
+7c23d8b1-1c5a-497a-937f-393b56b8c455,view_pdf,"Luas Panen dan Produksi Padi di Kota Malang (Angka Sementara, Hasil KSA Amatan September 2(1)2025-11-25",ios,testessl846@gmail.com,2026-08-20 04:11:06.928253+00,,,6,fitur
+7c7f07a5-02e4-468a-8710-969e6f0ef450,view_page,Perekonomian,ios,testessl846@gmail.com,2026-08-20 07:24:05.797728+00,,,1,fitur
+7d32c813-c6d5-4cd3-ac70-cb4344fd50ac,click_login_google,Masuk dengan Google (Native),android,,2026-08-26 04:34:31.531626+00,,,,auth
+7d9ab36e-45e3-4251-9129-0805a4325439,view_page,Tenaga Kerja,ios,testessl846@gmail.com,2026-08-20 01:22:00.428562+00,,,2,fitur
+7d9bd8a8-985d-4e12-96f0-ce3209794bb2,view_pdf,"Tingkat Penghunian Kamar (TPK) Hotel Kota Malang Bulan Mei 2026 Mencapai 43,48 persen(1)2026-07-01",ios,testessl846@gmail.com,2026-08-20 04:43:40.158491+00,,,1,fitur
+7dd92665-6111-41c0-a346-56f4cc79b139,view_infografis_list,Temukan Infografis lainnya,ios,testessl846@gmail.com,2026-08-20 08:29:30.469112+00,,,,infografis
+7f5cb399-269a-4f62-9a52-f26ecadc4acf,view_youtube_stream,Siaran Pers - Berita Resmi Statistik Agustus 2026,android,20tttttttttttt@gmail.com,2026-08-31 07:08:54.421616+00,,,,youtube
+800a90dc-8220-4d4e-b80e-d0c7a766389b,view_publikasi_list,Temukan Publikasi lainnya,ios,testessl846@gmail.com,2026-08-20 02:58:47.742081+00,,,,publikasi
+81a00feb-8df1-401f-8f82-ff15eaf26763,download_file,Infografis ST2023 - I Kota Malang,ios,testessl846@gmail.com,2026-08-20 04:05:08.707852+00,,,,berita
+8235fcc1-b80a-42a1-a217-8d8546fb5a69,click_login_google,Masuk dengan Google (Native),android,,2026-08-26 04:35:54.871093+00,,,,auth
+825233f6-dcdc-44e6-ab80-3c763589ad8f,view_page,Kemiskinan,ios,testessl846@gmail.com,2026-08-20 07:24:24.940451+00,,,4,fitur
+82580e19-87f8-4ba3-93f3-0f5df00c3335,view_publikasi_list,Temukan Publikasi lainnya,android,20tttttttttttt@gmail.com,2026-08-27 07:39:29.084006+00,,,,publikasi
+82acd618-5ced-4eb7-8c85-b42bece338d1,view_pdf,Jumlah Angkatan Kerja Kota Malang pada Agustus 2025 sebanyak 486.794 orang,ios,testessl846@gmail.com,2026-08-19 17:17:30.195791+00,,,2,fitur
+82fd1009-06c0-4121-ae37-4f5a32f0eeb1,view_pdf,"Tingkat Penghunian Tingkat Penghunian Kamar Hotel di Kota Malang Tembus 48,57 Persen Selam(1)2026-08-03",ios,testessl846@gmail.com,2026-08-20 04:11:01.921327+00,,,1,fitur
+8513d178-d4f6-4cf9-8a4c-c1d5c8b140fe,view_pdf,Inflasi Kota Malang 2025,ios,testessl846@gmail.com,2026-08-20 04:06:00.884884+00,,,1,fitur
+85e1db2d-9c74-4cc9-a45d-cbad63050437,view_pdf,Analisis Hasil Survei Kebutuhan Data BPS Kota Malang 2025,android,20tttttttttttt@gmail.com,2026-08-27 07:36:10.323589+00,,,,berita
+867128d0-90f1-48df-a0be-81e5f1a9c718,view_page,Laju Pertumbuhan Ekonomi,ios,testessl846@gmail.com,2026-08-20 07:24:08.039435+00,,,1,fitur
+8798afde-b8d0-492e-84d2-0072ec812031,view_pdf,Produk Domestik Regional Bruto Kota Malang Menurut Pengeluaran 2021–2025,ios,testessl846@gmail.com,2026-08-20 04:12:00.237488+00,,,7,fitur
+8a1c9a83-0017-4a19-aac5-8ef46d5df599,view_page,Halaman Login,android,,2026-08-27 05:15:57.050482+00,,,,auth
+8a653715-4528-4aaa-97e5-3845d65611d5,view_infografis_list,Temukan Infografis lainnya,ios,testessl846@gmail.com,2026-08-20 02:58:27.459399+00,,,,infografis
+8ce7e8e5-1acc-478a-a485-8389e8eab539,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-19 17:17:24.182855+00,,,,berita
+8e176e0b-b44a-4fb3-94ba-9c21cbb08c83,download_file,"Juni 2026 Inflasi Year on Year (y-on-y) Kota Malang sebesar 3,16 persen.(1)2026-07-01",android,20tttttttttttt@gmail.com,2026-08-27 07:18:49.788221+00,,,1,fitur
+8e4a26c3-cd49-4a45-8ed4-5dfdc9cebf7b,click_login_google,Masuk dengan Google (Native),android,,2026-08-26 04:35:24.873871+00,,,,auth
+8ea75ab4-aa4f-4cd2-914f-014e95ed3fd9,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 02:11:03.416359+00,,,,berita
+8ec4f7c6-a1d6-4905-9e05-a0d3e2d3c32d,view_page,Penduduk Menurut Jenis Kelamin,ios,testessl846@gmail.com,2026-08-19 17:17:58.829014+00,,,5,fitur
+8ed80d7d-fa34-447d-8c00-ac5ebdf05b12,login_failed,"Supabase AuthException: {""code"":""unexpected_failure"",""message"":""Database error saving new user""}",android,,2026-08-26 04:34:42.062809+00,,,,auth
+9199b095-5212-44f3-b23a-f3807c95a1e7,click_login_google,Masuk dengan Google (Native),android,,2026-08-26 04:34:30.951965+00,,,,auth
+92391fb5-bb63-4320-bd1b-784da5377ca2,view_page,Penduduk Bekerja (IPM),ios,testessl846@gmail.com,2026-08-20 07:28:58.065256+00,,,3,fitur
+9339f63f-f09f-4d21-989c-031c66a54576,view_youtube_list,Lihat arsip Live Youtube,android,20tttttttttttt@gmail.com,2026-08-31 07:08:57.73742+00,,,,youtube
+94df5051-ddf0-4201-b577-c2cf92732bc2,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 08:17:24.17437+00,,,,berita
+94efb7ae-4ae4-481c-b1ab-fefdf5ccbe65,view_publikasi_list,Temukan Publikasi lainnya,ios,testessl846@gmail.com,2026-08-20 02:31:45.225207+00,,,,publikasi
+9624976f-8144-446f-b312-99ca67023c5f,view_pdf,Indeks Pembangunan Manusia (IPM) Kota Malang Tahun 2024,ios,testessl846@gmail.com,2026-08-20 02:57:40.8726+00,,,3,fitur
+98b4b7d1-e8be-4658-b320-d402d8d3bdf8,login_success,Login Google Native Sukses,android,jonathansalim2204@gmail.com,2026-08-26 04:36:23.531493+00,,,,auth
+98bec234-fa00-45ec-92a4-777387a34b2e,view_page,Halaman Profil,ios,testessl846@gmail.com,2026-08-20 08:29:07.332755+00,,,,profil
+995f853d-0907-495f-90bd-6ba2e03eecc8,view_page,Produksi Padi,ios,testessl846@gmail.com,2026-08-20 02:57:48.905509+00,,,6,fitur
+9a971db4-989d-4588-bbfe-54bd215a4575,view_page,Tenaga Kerja,ios,testessl846@gmail.com,2026-08-20 02:10:00.463897+00,,,2,fitur
+9eb72908-9542-4877-a8cd-45fe320b4e8a,view_pdf,"Tingkat Penghunian Tingkat Penghunian Kamar Hotel di Kota Malang Tembus 48,57 Persen Selama Musim Libur Sekolah Juni 2026",ios,testessl846@gmail.com,2026-08-20 04:42:02.075937+00,,,1,fitur
+a03f034a-8c6e-42f8-a13b-a300719a2429,view_page,Halaman Profil,ios,testessl846@gmail.com,2026-08-20 04:01:09.274549+00,,,,profil
+a0e90a81-4102-478a-af6b-56d19ca8892e,view_publikasi_list,Temukan Publikasi lainnya,ios,testessl846@gmail.com,2026-08-20 02:55:29.746848+00,,,,publikasi
+a1601c73-b36f-4ca1-a262-a12b94356c35,view_publikasi_list,Temukan Publikasi lainnya,ios,testessl846@gmail.com,2026-08-20 04:05:23.378292+00,,,,publikasi
+a17c315e-9024-4998-ab26-e333a00f31b5,view_pdf,"Keadaan Ketenagakerjaan Kota Malang, Agustus 2020",ios,testessl846@gmail.com,2026-08-20 01:56:15.253729+00,,,2,fitur
+a1f40e4b-8821-41dc-b193-52601526f9e1,view_pdf,"Luas Panen dan Produksi Padi di Kota Malang 2025 (Angka Sementara, Hasil KSA Amatan September 2025)",ios,testessl846@gmail.com,2026-08-20 02:58:08.364611+00,,,6,fitur
+a248b512-1be1-4bd8-995c-373c65650b41,login_failed,"Supabase AuthException: {""code"":""unexpected_failure"",""message"":""Database error saving new user""}",android,,2026-08-26 04:34:48.091703+00,,,,auth
+a255e8ac-98b6-4f4b-8077-8dbb8ba9b6ec,view_page,Halaman Login,android,,2026-08-24 05:28:33.272478+00,,,,auth
+a26053a6-800f-4cda-9fd2-63c69fe7ec81,view_page,Perekonomian,ios,testessl846@gmail.com,2026-08-20 07:22:25.607994+00,,,1,fitur
+a2d36875-4fd0-46f0-ab3c-c84c75467f02,click_login_google,Masuk dengan Google (Native),android,,2026-08-26 04:35:38.557833+00,,,,auth
+a3e7bcb8-18c8-4fac-8072-89ae0e816f71,view_pdf,"Indeks Ketimpangan Gender Kota Malang Tahun 2025 sebesar 0,137",ios,testessl846@gmail.com,2026-08-20 02:57:37.624282+00,,,3,fitur
+a5024054-461d-4dd3-83b1-072f7da3c58f,view_page,Halaman Login,android,,2026-08-31 05:02:07.064582+00,,,,auth
+a5d50008-b95b-42af-9e53-106e73143c99,click_login_google,Masuk dengan Google (Native),android,,2026-08-31 06:42:29.998327+00,,,,auth
+a61e12cd-c6f5-4632-a488-0cf0ed49f75d,login_failed,"Supabase AuthException: {""code"":""unexpected_failure"",""message"":""Database error saving new user""}",android,,2026-08-26 04:34:42.164063+00,,,,auth
+a7239d7c-7462-413a-be69-8d2dc8fe47d2,view_page,Laju Pertumbuhan Ekonomi,ios,testessl846@gmail.com,2026-08-20 03:04:19.57516+00,,,1,fitur
+a7bf1cb0-bffd-4c62-831e-f43fa6aa867d,download_file,Infografis ST2023 - I Kota Malang,ios,testessl846@gmail.com,2026-08-20 04:10:48.931344+00,,,,berita
+a8b24d3a-b7c3-4b0c-8b9e-446224c2616c,view_pdf,Luas Panen dan Produksi Padi di Kota Malang 2021 Hasil Kegiatan Pandataan Statistik Pertanian Tanaman Pangan Terintegrasi dengan Metode Kerangka Sampel Area,ios,testessl846@gmail.com,2026-08-20 02:58:57.939672+00,,,6,fitur
+a8f0111f-2a23-4f88-8d39-c4358dc831f7,login_success,Login Google Sukses,android,jonathansalim2204@gmail.com,2026-08-26 04:36:23.632694+00,,,,auth
+a927cd18-e019-444f-89e7-1b8f7fd92087,view_pdf,Statistik Hortikultura Kota Malang 2019,ios,testessl846@gmail.com,2026-08-20 02:59:07.12777+00,,,6,fitur
+ab3055c2-a7a2-483f-b4c7-8d0e30336ae1,view_infografis_list,Temukan Infografis lainnya,ios,testessl846@gmail.com,2026-08-20 04:09:46.512086+00,,,,infografis
+ab7dcd61-a4c2-4f00-a912-4e803e5b8eb3,view_pdf,Produk Domestik Regional Bruto Kota Malang Menurut Pengeluaran 2021–2025,android,20tttttttttttt@gmail.com,2026-08-27 07:34:38.065611+00,,,7,fitur
+ac55b7e6-47fa-4487-8d4c-562701f2ae59,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 03:58:35.6437+00,,,,berita
+ac8eaea3-df53-436f-b23f-a4846eb7ec90,view_page,Kemiskinan,ios,testessl846@gmail.com,2026-08-20 01:22:15.969082+00,,,4,fitur
+ad934f76-7709-4b8d-87b6-19ff102ba718,view_page,Produksi Beras,ios,testessl846@gmail.com,2026-08-20 02:57:55.06428+00,,,6,fitur
+adae9d66-d306-4076-9200-b3294701cd1d,click_login_google,Masuk dengan Google (Native),android,,2026-08-26 04:34:45.550101+00,,,,auth
+aef97396-1b3e-4a80-9aa0-1b48351dba9c,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 02:57:32.872932+00,,,,berita
+afdc98d7-c46d-4d3d-a33d-47172916420e,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 04:04:43.908051+00,,,,berita
+b0d16275-b8e8-4303-a274-f4e884682916,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 08:03:49.441986+00,,,,berita
+b17370f9-033f-4370-9c40-465f8e102163,view_page,Halaman Login,android,,2026-08-26 04:35:37.844839+00,,,,auth
+b1a83d26-5130-4b8b-b88e-f96219ec46ee,view_page,Perekonomian,ios,testessl846@gmail.com,2026-08-20 02:10:39.654388+00,,,1,fitur
+b1d2c82c-5cbd-43ac-a8d4-5959e83baa5f,view_page,Pertanian,ios,testessl846@gmail.com,2026-08-20 15:23:53.969779+00,,,6,fitur
+b26d7843-cf27-4934-80d3-e08db82affc7,click_login_google,Masuk dengan Google (Native),android,,2026-08-24 05:30:40.935295+00,,,,auth
+b444a76b-74ab-44bd-b31c-67876b2a3613,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 02:29:29.458196+00,,,,berita
+b4a41e67-70e3-4ebf-9bb6-0f53379b90f2,view_page,Produk Domestik Regional Bruto (PDRB),ios,testessl846@gmail.com,2026-08-20 07:22:27.337803+00,,,1,fitur
+b4caa30d-f938-4e7a-bd0b-a0fd18290799,view_page,Tenaga Kerja,ios,testessl846@gmail.com,2026-08-20 01:57:41.071144+00,,,2,fitur
+b65cc3de-db20-4f02-b1b9-d4767a7d5335,view_page,Produk Domestik Regional Bruto (PDRB),ios,testessl846@gmail.com,2026-08-20 03:04:21.128825+00,,,1,fitur
+b6be69e1-5672-4fa8-829d-190a2af76dfb,download_file,Standar Pelayanan-Penjualan Produk BPS,android,20tttttttttttt@gmail.com,2026-08-27 07:18:36.40633+00,,,,berita
+b6faeec8-c603-4f1d-af36-eef259e05070,view_pdf,Statistik Hortikultura Kota Malang 2021,ios,testessl846@gmail.com,2026-08-20 02:59:05.24667+00,,,6,fitur
+b75b6541-ebf6-4976-8236-d25198b055ed,view_pdf,Statistik Hortikultura Kota Malang 2024,ios,testessl846@gmail.com,2026-08-20 02:58:51.771858+00,,,6,fitur
+ba685f0a-3269-44d1-ba62-647495f7e9f3,view_page,Halaman Profil,ios,testessl846@gmail.com,2026-08-20 08:30:24.522736+00,,,,profil
+babb2df6-28e2-48fa-8506-c66924c83057,view_pdf,Kota Malang Dalam Angka 2026,android,20tttttttttttt@gmail.com,2026-08-27 07:36:38.11109+00,,,5,fitur
+bc61a695-3836-45bc-a63e-bfc2ae8402b0,view_youtube,MEETING MINGGUAN SE2026,ios,testessl846@gmail.com,2026-08-20 02:11:59.40028+00,,,,youtube
+bf58ce09-03d6-4fda-bf51-4ed3f7b36872,view_pdf,"Tingkat Penghunian Tingkat Penghunian Kamar Hotel di Kota Malang Tembus 48,57 Persen Selama Musim Libur Sekolah Juni 2026",ios,testessl846@gmail.com,2026-08-20 17:50:25.421562+00,,,1,fitur
+bfbf1927-fc9f-4b1b-8255-96ebc2a7dabe,view_pdf,Luas Panen dan Produksi Padi Kota Malang 2023,ios,testessl846@gmail.com,2026-08-20 04:43:56.178948+00,,,6,fitur
+c0f3ba57-a936-470d-be66-2974faeaf85e,view_youtube_stream,Siaran Pers - Berita Resmi Statistik Agustus 2026,ios,testessl846@gmail.com,2026-08-20 02:11:20.763763+00,,,,youtube
+c258e9ef-4890-4282-9a86-fb6b4139b1e4,view_page,Angkatan Kerja Menurut Pendidikan,ios,testessl846@gmail.com,2026-08-20 07:28:48.842097+00,,,2,fitur
+c359e36b-ad0b-496d-8638-405bf6a1a938,view_pdf,Ketenagakerjaan Kota Malang 2024,ios,testessl846@gmail.com,2026-08-20 02:31:49.638047+00,,,2,fitur
+c365211d-9076-416f-a6ad-86694799a831,view_publikasi_list,Temukan Publikasi lainnya,ios,testessl846@gmail.com,2026-08-20 04:12:27.369106+00,,,,publikasi
+c385187b-8382-4fa1-8828-70182ca57d8f,view_page,Perekonomian,ios,testessl846@gmail.com,2026-08-20 01:22:10.114573+00,,,1,fitur
+c48bde28-b755-4dc2-9354-04e55b1c3da0,view_pdf,Luas Panen dan Produksi Padidi Kota Malang 2025 (Angka Tetap),ios,testessl846@gmail.com,2026-08-20 02:55:57.054531+00,,,6,fitur
+c4f892d5-758d-41f6-ac36-539296ef42e8,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 02:09:06.659788+00,,,,berita
+c75e0503-2c8d-44e8-b122-258fb145dfd5,view_pdf,"Tingkat Penghunian Tingkat Penghunian Kamar Hotel di Kota Malang Tembus 48,57 Persen Selama Musim Libur Sekolah Juni 2026",ios,testessl846@gmail.com,2026-08-20 08:20:05.157829+00,,,1,fitur
+c7abc1d8-a5f6-46e9-b6df-788651a96a01,view_pdf,Kota Malang Dalam Angka 2026,ios,testessl846@gmail.com,2026-08-20 02:58:25.169451+00,,,5,fitur
+c7b1ac29-2943-4c26-ab73-4f10d4e4d785,download_file,"Tingkat Penghunian Kamar (TPK) Hotel Kota Malang Bulan April 2026 Mencapai 40,69 persen",ios,testessl846@gmail.com,2026-08-20 04:42:53.475429+00,,,1,fitur
+c7f1e261-946a-444d-9b42-174fdfe385c6,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-21 08:24:17.846997+00,,,,berita
+c8855f61-cd9e-4df1-92e8-130e59b69a6b,view_page,Pertanian,ios,testessl846@gmail.com,2026-08-20 07:22:54.001677+00,,,6,fitur
+c8e2ac54-053e-4963-b9cf-a1bc657b40c7,login_failed,"Supabase AuthException: {""code"":""unexpected_failure"",""message"":""Database error saving new user""}",android,,2026-08-26 04:34:59.716967+00,,,,auth
+c9d27dba-cedb-41a0-8e68-55d39de549e1,view_page,Kependudukan,ios,testessl846@gmail.com,2026-08-19 17:17:56.201475+00,,,5,fitur
+c9f64e8c-4186-491d-90bd-504abc25b064,view_pdf,Statistik Hortikultura Kota Malang 2020,ios,testessl846@gmail.com,2026-08-20 02:59:08.634783+00,,,6,fitur
+cb0380e3-ab96-4c7f-bd6d-91d8912f801b,view_page,Halaman Login,ios,,2026-08-19 17:14:49.747336+00,,,,auth
+cb116518-655f-4d0e-a3ac-802aab6228e9,click_login_google,Masuk dengan Google (Native),android,,2026-08-21 06:49:57.468902+00,,,,auth
+cb859739-94fc-4946-a97e-f2662b3d5ca7,view_pdf,Luas Panen dan Produksi Padi di Kota Malang 2023,ios,testessl846@gmail.com,2026-08-20 02:58:14.396661+00,,,6,fitur
+cdb8db73-e3df-4256-bff0-aae1ac8a9e4f,view_pdf,Statistik Hortikultura Kota Malang 2022,ios,testessl846@gmail.com,2026-08-20 02:59:01.114334+00,,,6,fitur
+cf8d6ed9-e4aa-4b69-be1e-450037459417,click_login_google,Masuk dengan Google (Native),android,,2026-08-26 03:58:29.964666+00,,,,auth
+d0808478-5ed6-4e10-b05b-e053408d52d2,view_page,Tenaga Kerja,ios,testessl846@gmail.com,2026-08-20 17:50:00.774097+00,,,2,fitur
+d1a8cd28-d5ef-4c00-830d-511ad408be04,login_failed,"Supabase AuthException: {""code"":""unexpected_failure"",""message"":""Database error saving new user""}",android,,2026-08-26 04:36:06.757395+00,,,,auth
+d3451142-c40c-4ac4-8ae4-a6a3b8465237,view_pdf,"Tingkat Penghunian Tingkat Penghunian Kamar Hotel di Kota Malang Tembus 48,57 Persen Selama Musim Libur Sekolah Juni 2026",ios,testessl846@gmail.com,2026-08-21 08:25:16.692369+00,,,1,fitur
+d523c928-7fad-4858-a3fa-2c23379da16f,view_page,Halaman Login,android,,2026-08-26 04:34:29.662685+00,,,,auth
+d5526599-9dd1-404c-9edc-38029a3c4eba,view_youtube,Siaran Pers Berita Resmi Statistik Juni 2026,android,20tttttttttttt@gmail.com,2026-08-31 07:17:37.458766+00,,,,youtube
+d5b783d6-75b2-43cc-aa45-ee1b5232bfe7,view_page,Tenaga Kerja,ios,testessl846@gmail.com,2026-08-20 02:10:05.41383+00,,,2,fitur
+d80bc8ec-f622-4318-b2c9-eb68dc357e5f,view_pdf,"Juli 2026 Inflasi Year on Year (y-on-y) Kota Malang sebesar 2,83  persen",ios,testessl846@gmail.com,2026-08-20 04:04:41.218559+00,,,1,fitur
+d8783af3-9380-44b3-a43d-56e7901f4d86,view_pdf,Luas Panen dan Produksi Padi di Kota Malang 2024,ios,testessl846@gmail.com,2026-08-20 02:12:08.854057+00,,,6,fitur
+d9086b62-db84-413a-ad1d-cf67ad0257d1,view_youtube_stream,Siaran Pers - Berita Resmi Statistik Agustus 2026,ios,testessl846@gmail.com,2026-08-20 08:30:04.50685+00,,,,youtube
+d93021f5-422b-4717-891f-82de8a549268,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-19 17:18:05.033323+00,,,,berita
+d977008f-b227-4bbb-a4cc-855c241adcea,view_page,Tenaga Kerja,ios,testessl846@gmail.com,2026-08-20 01:51:56.866179+00,,,2,fitur
+d9770530-713a-4107-b65b-d95f9449663c,view_youtube_stream,Siaran Pers - Berita Resmi Statistik Agustus 2026,android,20tttttttttttt@gmail.com,2026-08-31 06:44:53.315868+00,,,,youtube
+db11579b-32ee-4545-b300-5cdd99716a74,view_page,Tingkat Kemiskinan,ios,testessl846@gmail.com,2026-08-20 01:22:18.184235+00,,,4,fitur
+dc449afb-e010-46bd-89b8-faf3627d9cab,view_pdf,Produk Domestik Regional Bruto Kota Malang Menurut Pengeluaran 2021–2025,ios,testessl846@gmail.com,2026-08-20 04:12:03.984842+00,,,7,fitur
+dd1e93ea-6118-4779-b2bf-ee2aab48a51d,view_page,Halaman Profil,ios,testessl846@gmail.com,2026-08-20 03:58:52.605105+00,,,,profil
+dd716302-34fa-4d22-a5bf-190326994054,view_page,IPM,ios,testessl846@gmail.com,2026-08-19 17:19:30.160158+00,,,3,fitur
+dd94278c-f444-4ce9-b911-3d7666999771,view_page,Inflasi Tahun Kalender,ios,testessl846@gmail.com,2026-08-20 07:22:43.788211+00,,,1,fitur
+de52b08f-a865-4e70-8479-fd46afbb61bd,view_page,Tenaga Kerja,ios,testessl846@gmail.com,2026-08-20 15:23:42.59832+00,,,2,fitur
+def87225-7f3c-4d6e-b8ee-eff7ce2cddc4,view_page,Usia Harapan Hidup,ios,testessl846@gmail.com,2026-08-20 02:57:13.577901+00,,,3,fitur
+dfd77afe-e5d5-45df-86b6-3fd6a36fb4ae,view_pdf,"Juli 2026 Inflasi Year on Year (y-on-y) Kota Malang sebesar 2,83  persen(1)2026-08-03",ios,testessl846@gmail.com,2026-08-20 04:10:56.00655+00,,,1,fitur
+e0b59f55-e057-4134-aa47-4bbb93fc8b9c,view_page,Laju Pertumbuhan Ekonomi,ios,testessl846@gmail.com,2026-08-20 17:58:11.232467+00,,,1,fitur
+e250528a-cc10-4df5-8afc-0a095f3c6cbf,view_pdf,Produk Domestik Regional Bruto Kota Malang Menurut Pengeluaran 2021–2025,ios,testessl846@gmail.com,2026-08-20 04:05:25.803436+00,,,7,fitur
+e288dd95-628e-443c-be81-35d473742f74,view_pdf,"Persentase penduduk miskin di Kota Malang pada Maret 2025 sebesar 3,85 persen, mengalami penurunan jika dibandingkan tahun sebelumnya.",ios,testessl846@gmail.com,2026-08-19 17:18:11.778853+00,,,4,fitur
+e4bc6de4-faba-4a97-be0f-69f7d1d3f0f9,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 04:06:13.954407+00,,,,berita
+e507a651-e455-4794-81ec-701f41e42bac,view_page,Produktivitas Padi,ios,testessl846@gmail.com,2026-08-20 15:23:54.906775+00,,,6,fitur
+e58e62e4-b7b4-4cf3-9970-071502e382e6,login_success,Login Google Sukses,android,20tttttttttttt@gmail.com,2026-08-27 05:16:25.838578+00,,,,auth
+e60451fb-ceec-47f7-8ed6-81874d89f3a0,view_pdf,Analisis Isu Terkini 2025 Determinan Pengangguran Terdidik Kota Malang,ios,testessl846@gmail.com,2026-08-20 03:58:17.16513+00,,,2,fitur
+e9a32e59-78de-4bb6-b11e-345047af8ebf,view_publikasi_list,Temukan Publikasi lainnya,ios,testessl846@gmail.com,2026-08-20 02:12:05.859857+00,,,,publikasi
+e9a657e7-acab-4964-acda-b1bbe724ffdf,view_page,Halaman Login,android,,2026-08-24 07:44:05.735895+00,,,,auth
+ea533a67-141d-45c9-b796-4e414bed4bf1,download_file,Luas Panen dan Produksi Padidi Kota Malang 2025 (Angka Tetap)(1)2026-03-09,android,20tttttttttttt@gmail.com,2026-08-27 07:19:04.862147+00,,,6,fitur
+ec07cb32-37e0-40b1-a88b-cc99456c6976,view_infografis_list,Temukan Infografis lainnya,ios,testessl846@gmail.com,2026-08-20 04:10:52.922422+00,,,,infografis
+ecb4e61d-8eb7-4f9a-9f59-cbab3f436f75,view_page,Luas Panen Padi,ios,testessl846@gmail.com,2026-08-20 02:57:57.087204+00,,,6,fitur
+ee0f9b50-8af6-44dd-88d3-273a11eb1984,view_publikasi_list,Temukan Publikasi lainnya,ios,testessl846@gmail.com,2026-08-20 08:29:37.473723+00,,,,publikasi
+ee123045-fcff-4832-8f7c-e2909bdf5bbe,view_pdf,"Luas Panen dan Produksi Padi di Kota Malang 2025 (Angka Sementara, Hasil KSA Amatan September 2025)",ios,testessl846@gmail.com,2026-08-20 02:56:01.269401+00,,,6,fitur
+f0cce455-3299-4ea2-8bbe-1f80ef8088cc,view_pdf,"Tingkat Penghunian Kamar (TPK) Hotel Kota Malang Bulan Mei 2026 Mencapai 43,48 persen(1)2026-07-01",ios,testessl846@gmail.com,2026-08-20 04:44:08.540925+00,,,1,fitur
+f1849856-4ecf-44a3-bb8a-8f30eecfcdf0,click_login_google,Masuk dengan Google (Native),android,,2026-08-24 07:44:06.356471+00,,,,auth
+f32c8d09-8cd8-4fcc-a341-5f7d43b089e5,view_page,Halaman Profil,ios,testessl846@gmail.com,2026-08-20 08:25:11.236833+00,,,,profil
+f37d275d-f19a-4682-8aa5-0afa7d89668f,view_page,Daya Beli,ios,testessl846@gmail.com,2026-08-20 07:29:04.208236+00,,,3,fitur
+f4e0207e-6852-42a8-ac9a-74e6d85f7c31,view_pdf,"Tingkat Penghunian Tingkat Penghunian Kamar Hotel di Kota Malang Tembus 48,57 Persen Selama Musim Libur Sekolah Juni 2026",ios,testessl846@gmail.com,2026-08-20 08:03:52.920656+00,,,1,fitur
+f5209033-fa13-47e9-9494-cc0b80239b93,view_pdf,"Juli 2026 Inflasi Year on Year (y-on-y) Kota Malang sebesar 2,83  persen",ios,testessl846@gmail.com,2026-08-20 04:41:49.025715+00,,,1,fitur
+f75fb9d9-0f7b-48d1-8428-88ff7dd547a7,view_pdf,Produk Domestik Regional Bruto Kota Malang Menurut Lapangan Usaha 2021–2025,ios,testessl846@gmail.com,2026-08-20 04:06:54.733222+00,,,1,fitur
+f82d2655-7994-4761-9b19-8d7efbd56e4d,view_publikasi_list,Temukan Publikasi lainnya,ios,testessl846@gmail.com,2026-08-19 17:18:23.411277+00,,,,publikasi
+f9877c80-a0bb-4389-8bf2-ba226e7885a5,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 04:08:56.483283+00,,,,berita
+fa5d7235-432f-4ad4-8c0f-fd733f50a20a,view_brs_list,Temukan BRS lainnya,ios,testessl846@gmail.com,2026-08-20 02:10:14.670975+00,,,,berita
+fca372f2-8f95-41a0-8096-4b0c99f5f55a,view_pdf,"Tingkat Penghunian Kamar (TPK) Hotel Kota Malang Bulan Mei 2026 Mencapai 43,48 persen(1)2026-07-01",ios,testessl846@gmail.com,2026-08-20 04:44:17.930399+00,,,1,fitur
+fce2c777-7f3a-404f-b1ae-4e5d5700d912,view_pdf,Ketenagakerjaan Kota Malang 2021,ios,testessl846@gmail.com,2026-08-20 02:11:16.069421+00,,,2,fitur
+fcf0e2d4-35ed-4de6-8909-3113cfc94b00,view_pdf,Direktori Industri Manufaktur Kota Malang 2025,android,20tttttttttttt@gmail.com,2026-08-27 07:39:33.404982+00,,,1,fitur
+febbf26f-396f-4afa-a85e-6c3f109f5b00,view_publikasi_list,Temukan Publikasi lainnya,ios,testessl846@gmail.com,2026-08-20 04:06:07.623476+00,,,,publikasi

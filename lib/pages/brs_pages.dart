@@ -95,11 +95,16 @@ class _BeritaPageState extends State<BeritaPages> {
 
       var query = Supabase.instance.client
           .from('contents')
-          .select()
-          .eq('action_type', 'view_brs_pdf');
+          .select(_selectedSector != 'semua' ? '*, contents_has_categories!inner(categories_id_category)' : '*')
+          .or('content_type.eq.brs,action_type.eq.view_brs_pdf');
 
-      if (_selectedSector != 'semua') {
-        query = query.contains('sector_categories', [_selectedSector]);
+      const sectorToCategoryId = {
+        'perekonomian': 1, 'tenaga_kerja': 2, 'ipm': 3,
+        'kemiskinan': 4, 'kependudukan': 5, 'pertanian': 6, 'kesejahteraan': 7,
+      };
+
+      if (_selectedSector != 'semua' && sectorToCategoryId.containsKey(_selectedSector)) {
+        query = query.eq('contents_has_categories.categories_id_category', sectorToCategoryId[_selectedSector]!);
       }
 
       final response = await query
@@ -112,11 +117,10 @@ class _BeritaPageState extends State<BeritaPages> {
         setState(() {
           if (list.isNotEmpty) {
             dataBRS.addAll(list.map((item) => {
-              'title': item['item_name'],
+              'title': item['title'] ?? item['item_name'],
               'thumbnail': item['cover_url'],
               'pdf': item['content_url'],
               'created_at': item['created_at'],
-              'sector_categories': item['sector_categories'],
             }));
             currentPage++;
           }
@@ -359,25 +363,29 @@ class _BeritaPageState extends State<BeritaPages> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        parse(HtmlUnescape().convert(dataBRS[index]["abstract"])).body?.text ?? '',
+                        dataBRS[index]["abstract"] != null && (dataBRS[index]["abstract"] as String).isNotEmpty
+                            ? (parse(HtmlUnescape().convert(dataBRS[index]["abstract"])).body?.text ?? '')
+                            : (dataBRS[index]["title"] ?? ''),
                         style: TextStyle(fontSize: 13, color: dark1),
                         textAlign: TextAlign.justify,
                       ),
                       const SizedBox(height: 8),
-                      Text(
-                        "Ukuran Berkas: ${dataBRS[index]["size"].replaceAll('.', ',')}",
-                        style: const TextStyle(
-                            fontSize: 12,
-                            color: Colors.grey
+                      if (dataBRS[index]["size"] != null)
+                        Text(
+                          "Ukuran Berkas: ${(dataBRS[index]["size"] as String).replaceAll('.', ',')}",
+                          style: const TextStyle(
+                              fontSize: 12,
+                              color: Colors.grey
+                          ),
                         ),
-                      ),
-                      Text(
-                        "Tanggal Rilis: ${dataBRS[index]["rl_date"]}",
-                        style: const TextStyle(
-                            fontSize: 12,
-                            color: Colors.grey
+                      if (dataBRS[index]["rl_date"] != null || dataBRS[index]["created_at"] != null)
+                        Text(
+                          "Tanggal Rilis: ${dataBRS[index]["rl_date"] ?? dataBRS[index]["created_at"]?.toString().split('T')[0] ?? ''}",
+                          style: const TextStyle(
+                              fontSize: 12,
+                              color: Colors.grey
+                          ),
                         ),
-                      ),
                     ],
                   ),
                 ),
@@ -407,6 +415,7 @@ class _BeritaPageState extends State<BeritaPages> {
                     String fileName = dataBRS[index]["title"];
                     LoggerService.logActivity(
                       actionType: 'view_pdf',
+                      contentType: 'brs',
                       sectorCategory: LoggerService.classifySector(fileName),
                       itemName: fileName,
                       coverUrl: dataBRS[index]["thumbnail"],
