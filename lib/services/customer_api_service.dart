@@ -106,18 +106,17 @@ class CustomerApiService {
           return CustomerProfileData.fromJson(dataJson);
         }
       }
-      return null;
-    } catch (e) {
-      print("[CustomerApiService] Error fetching from API endpoint: $e");
-      return null;
+    } catch (_) {
+      // Jika server PHP lokal offline / Connection refused, fallback otomatis ke Supabase
     }
+    return await getCustomerFromSupabase(email);
   }
 
-  /// Mengambil data customer langsung dari Supabase Cloud (tabel users_buku_tamu)
+  /// Mengambil data customer langsung dari Supabase Cloud (tabel user_all)
   static Future<CustomerProfileData?> getCustomerFromSupabase(String email) async {
     try {
       final data = await Supabase.instance.client
-          .from('users_buku_tamu')
+          .from('user_all')
           .select()
           .eq('email', email)
           .maybeSingle();
@@ -148,6 +147,30 @@ class CustomerApiService {
     } catch (e) {
       print("[CustomerApiService] getUserAllProfile Error: $e");
       return null;
+    }
+  }
+
+  /// Mengambil data customer milik user yang sedang aktif login
+  static Future<CustomerProfileData?> getCurrentUserProfile() async {
+    final user = Supabase.instance.client.auth.currentUser;
+    if (user == null || user.email == null) return null;
+    return await getCustomerFromSupabase(user.email!);
+  }
+
+  /// Memperbarui data pengguna di tabel user_all berdasarkan email
+  static Future<bool> updateCustomerInSupabase({
+    required String email,
+    required Map<String, dynamic> updateData,
+  }) async {
+    try {
+      await Supabase.instance.client
+          .from('user_all')
+          .update(updateData)
+          .eq('email', email);
+      return true;
+    } catch (e) {
+      print("updateCustomerInSupabase Error: $e");
+      return false;
     }
   }
 }
