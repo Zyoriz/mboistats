@@ -113,9 +113,8 @@ class _SearchPageState extends State<SearchPage> {
       final response = await Supabase.instance.client
           .from('contents')
           .select('*, contents_has_categories(categories(category))')
-          .ilike('title', '%$cleanQuery%')
           .order('created_at', ascending: false)
-          .limit(100);
+          .limit(1000);
 
       final List<Map<String, dynamic>> list = List<Map<String, dynamic>>.from(response);
 

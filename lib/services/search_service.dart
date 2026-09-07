@@ -129,7 +129,9 @@ class SearchService {
         score += _mlBoost;
       }
 
-      scored.add(MapEntry(item, score));
+      if (score > 0) {
+        scored.add(MapEntry(item, score));
+      }
     }
 
     scored.sort((a, b) => b.value.compareTo(a.value));
