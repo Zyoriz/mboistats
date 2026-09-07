@@ -1,0 +1,275 @@
+{
+  "index": {
+    "perkembangan": {
+      "153eb443-bf3a-4972-91d8-9789b011510b": 1
+    },
+    "indeks": {
+      "153eb443-bf3a-4972-91d8-9789b011510b": 1,
+      "849d2910-63e6-42b9-bc4d-f43f9d152bcf": 1,
+      "b77e7e0a-b2da-418b-8f86-6cc73c24254a": 1
+    },
+    "harga": {
+      "153eb443-bf3a-4972-91d8-9789b011510b": 1
+    },
+    "konsumen": {
+      "153eb443-bf3a-4972-91d8-9789b011510b": 1
+    },
+    "inflasi": {
+      "153eb443-bf3a-4972-91d8-9789b011510b": 1
+    },
+    "2024": {
+      "153eb443-bf3a-4972-91d8-9789b011510b": 1,
+      "73f00342-0b53-43b9-bbcf-1a523751ddda": 1,
+      "34649ace-ddf1-4f19-aa4e-2f065c52ac56": 1,
+      "4d21cdd5-8bbb-4588-9d75-bdf304eabaa2": 1
+    },
+    "produk": {
+      "b4138e54-6653-472c-ae8b-b01fa86a3b0e": 1
+    },
+    "domestik": {
+      "b4138e54-6653-472c-ae8b-b01fa86a3b0e": 1
+    },
+    "regional": {
+      "b4138e54-6653-472c-ae8b-b01fa86a3b0e": 1
+    },
+    "bruto": {
+      "b4138e54-6653-472c-ae8b-b01fa86a3b0e": 1
+    },
+    "lapangan": {
+      "b4138e54-6653-472c-ae8b-b01fa86a3b0e": 1
+    },
+    "usaha": {
+      "b4138e54-6653-472c-ae8b-b01fa86a3b0e": 1
+    },
+    "2023": {
+      "b4138e54-6653-472c-ae8b-b01fa86a3b0e": 1,
+      "29c70151-0b4a-4225-8eb2-eb5abce97b15": 1,
+      "dbb4a727-6747-4aad-95de-33be8902e079": 1,
+      "b77e7e0a-b2da-418b-8f86-6cc73c24254a": 1,
+      "bfb01c78-0ed2-46dd-9631-7d6cdc32c4a8": 1,
+      "d1f9c425-45eb-4e73-b65e-c08d0fad3caf": 1,
+      "53ccbf55-ec6c-41ee-b286-a287c99906a8": 1,
+      "821622ab-94f7-498c-b216-82c39b77ef9d": 1,
+      "d8f046d4-0fd0-424e-9b7d-1ad89485766a": 1,
+      "23a58e84-c462-4bf8-a5ea-c7bc3825a70c": 1
+    },
+    "penghunian": {
+      "73f00342-0b53-43b9-bbcf-1a523751ddda": 1
+    },
+    "kamar": {
+      "73f00342-0b53-43b9-bbcf-1a523751ddda": 1
+    },
+    "hotel": {
+      "73f00342-0b53-43b9-bbcf-1a523751ddda": 1
+    },
+    "semester": {
+      "73f00342-0b53-43b9-bbcf-1a523751ddda": 1
+    },
+    "laju": {
+      "34649ace-ddf1-4f19-aa4e-2f065c52ac56": 1
+    },
+    "pertumbuhan": {
+      "34649ace-ddf1-4f19-aa4e-2f065c52ac56": 1
+    },
+    "ekonomi": {
+      "34649ace-ddf1-4f19-aa4e-2f065c52ac56": 1
+    },
+    "lpe": {
+      "34649ace-ddf1-4f19-aa4e-2f065c52ac56": 1
+    },
+    "triwulan": {
+      "34649ace-ddf1-4f19-aa4e-2f065c52ac56": 1
+    },
+    "ii": {
+      "34649ace-ddf1-4f19-aa4e-2f065c52ac56": 1
+    },
+    "profil": {
+      "29c70151-0b4a-4225-8eb2-eb5abce97b15": 1
+    },
+    "kemiskinan": {
+      "29c70151-0b4a-4225-8eb2-eb5abce97b15": 1,
+      "849d2910-63e6-42b9-bc4d-f43f9d152bcf": 1,
+      "92628f5b-aa64-41bb-a679-f0b01507a173": 1
+    },
+    "kedalaman": {
+      "849d2910-63e6-42b9-bc4d-f43f9d152bcf": 1
+    },
+    "keparahan": {
+      "849d2910-63e6-42b9-bc4d-f43f9d152bcf": 1
+    },
+    "20192023": {
+      "849d2910-63e6-42b9-bc4d-f43f9d152bcf": 1
+    },
+    "garis": {
+      "92628f5b-aa64-41bb-a679-f0b01507a173": 1
+    },
+    "penduduk": {
+      "92628f5b-aa64-41bb-a679-f0b01507a173": 1,
+      "d1f9c425-45eb-4e73-b65e-c08d0fad3caf": 2,
+      "9a440ecf-18b0-4c1f-86e3-1793d657fe60": 1,
+      "d8f046d4-0fd0-424e-9b7d-1ad89485766a": 1
+    },
+    "miskin": {
+      "92628f5b-aa64-41bb-a679-f0b01507a173": 1
+    },
+    "keadaan": {
+      "dbb4a727-6747-4aad-95de-33be8902e079": 1
+    },
+    "ketenagakerjaan": {
+      "dbb4a727-6747-4aad-95de-33be8902e079": 1
+    },
+    "agustus": {
+      "dbb4a727-6747-4aad-95de-33be8902e079": 1
+    },
+    "pengangguran": {
+      "2b4ccc8e-b559-4c16-ac4a-59687e9c10bd": 1
+    },
+    "terbuka": {
+      "2b4ccc8e-b559-4c16-ac4a-59687e9c10bd": 1
+    },
+    "tpt": {
+      "2b4ccc8e-b559-4c16-ac4a-59687e9c10bd": 1
+    },
+    "pendidikan": {
+      "2b4ccc8e-b559-4c16-ac4a-59687e9c10bd": 1
+    },
+    "partisipasi": {
+      "0ad0a195-2b38-4f46-b205-0ca879fa1dbd": 1
+    },
+    "angkatan": {
+      "0ad0a195-2b38-4f46-b205-0ca879fa1dbd": 1
+    },
+    "kerja": {
+      "0ad0a195-2b38-4f46-b205-0ca879fa1dbd": 1
+    },
+    "tpak": {
+      "0ad0a195-2b38-4f46-b205-0ca879fa1dbd": 1
+    },
+    "pembangunan": {
+      "b77e7e0a-b2da-418b-8f86-6cc73c24254a": 1
+    },
+    "manusia": {
+      "b77e7e0a-b2da-418b-8f86-6cc73c24254a": 1
+    },
+    "ipm": {
+      "b77e7e0a-b2da-418b-8f86-6cc73c24254a": 1,
+      "66f6edee-0df5-41d3-a724-c4f06da0926a": 1
+    },
+    "harapan": {
+      "bfb01c78-0ed2-46dd-9631-7d6cdc32c4a8": 2
+    },
+    "hidup": {
+      "bfb01c78-0ed2-46dd-9631-7d6cdc32c4a8": 1
+    },
+    "lama": {
+      "bfb01c78-0ed2-46dd-9631-7d6cdc32c4a8": 1
+    },
+    "sekolah": {
+      "bfb01c78-0ed2-46dd-9631-7d6cdc32c4a8": 1
+    },
+    "infografis": {
+      "66f6edee-0df5-41d3-a724-c4f06da0926a": 1
+    },
+    "capaian": {
+      "66f6edee-0df5-41d3-a724-c4f06da0926a": 1
+    },
+    "tertinggi": {
+      "66f6edee-0df5-41d3-a724-c4f06da0926a": 1
+    },
+    "jawa": {
+      "66f6edee-0df5-41d3-a724-c4f06da0926a": 1
+    },
+    "timur": {
+      "66f6edee-0df5-41d3-a724-c4f06da0926a": 1
+    },
+    "sensus": {
+      "d1f9c425-45eb-4e73-b65e-c08d0fad3caf": 1
+    },
+    "proyeksi": {
+      "d1f9c425-45eb-4e73-b65e-c08d0fad3caf": 1
+    },
+    "kecamatan": {
+      "d1f9c425-45eb-4e73-b65e-c08d0fad3caf": 1
+    },
+    "kepadatan": {
+      "9a440ecf-18b0-4c1f-86e3-1793d657fe60": 1
+    },
+    "piramida": {
+      "9a440ecf-18b0-4c1f-86e3-1793d657fe60": 1
+    },
+    "luas": {
+      "53ccbf55-ec6c-41ee-b286-a287c99906a8": 1
+    },
+    "panen": {
+      "53ccbf55-ec6c-41ee-b286-a287c99906a8": 1
+    },
+    "produksi": {
+      "53ccbf55-ec6c-41ee-b286-a287c99906a8": 1
+    },
+    "padi": {
+      "53ccbf55-ec6c-41ee-b286-a287c99906a8": 1
+    },
+    "tetap": {
+      "53ccbf55-ec6c-41ee-b286-a287c99906a8": 1
+    },
+    "statistik": {
+      "821622ab-94f7-498c-b216-82c39b77ef9d": 1,
+      "23a58e84-c462-4bf8-a5ea-c7bc3825a70c": 1
+    },
+    "pertanian": {
+      "821622ab-94f7-498c-b216-82c39b77ef9d": 1
+    },
+    "peternakan": {
+      "821622ab-94f7-498c-b216-82c39b77ef9d": 1
+    },
+    "hortikultura": {
+      "821622ab-94f7-498c-b216-82c39b77ef9d": 1
+    },
+    "ketimpangan": {
+      "d8f046d4-0fd0-424e-9b7d-1ad89485766a": 1
+    },
+    "pengeluaran": {
+      "d8f046d4-0fd0-424e-9b7d-1ad89485766a": 1,
+      "23a58e84-c462-4bf8-a5ea-c7bc3825a70c": 1
+    },
+    "gini": {
+      "d8f046d4-0fd0-424e-9b7d-1ad89485766a": 1
+    },
+    "ratio": {
+      "d8f046d4-0fd0-424e-9b7d-1ad89485766a": 1
+    },
+    "kesejahteraan": {
+      "23a58e84-c462-4bf8-a5ea-c7bc3825a70c": 1
+    },
+    "rakyat": {
+      "23a58e84-c462-4bf8-a5ea-c7bc3825a70c": 1
+    },
+    "konsumsi": {
+      "23a58e84-c462-4bf8-a5ea-c7bc3825a70c": 1
+    }
+  },
+  "doc_lengths": {
+    "153eb443-bf3a-4972-91d8-9789b011510b": 6,
+    "b4138e54-6653-472c-ae8b-b01fa86a3b0e": 7,
+    "73f00342-0b53-43b9-bbcf-1a523751ddda": 5,
+    "34649ace-ddf1-4f19-aa4e-2f065c52ac56": 7,
+    "29c70151-0b4a-4225-8eb2-eb5abce97b15": 3,
+    "849d2910-63e6-42b9-bc4d-f43f9d152bcf": 5,
+    "92628f5b-aa64-41bb-a679-f0b01507a173": 4,
+    "dbb4a727-6747-4aad-95de-33be8902e079": 4,
+    "2b4ccc8e-b559-4c16-ac4a-59687e9c10bd": 4,
+    "0ad0a195-2b38-4f46-b205-0ca879fa1dbd": 4,
+    "b77e7e0a-b2da-418b-8f86-6cc73c24254a": 5,
+    "bfb01c78-0ed2-46dd-9631-7d6cdc32c4a8": 6,
+    "66f6edee-0df5-41d3-a724-c4f06da0926a": 6,
+    "4d21cdd5-8bbb-4588-9d75-bdf304eabaa2": 1,
+    "d1f9c425-45eb-4e73-b65e-c08d0fad3caf": 6,
+    "9a440ecf-18b0-4c1f-86e3-1793d657fe60": 3,
+    "53ccbf55-ec6c-41ee-b286-a287c99906a8": 6,
+    "821622ab-94f7-498c-b216-82c39b77ef9d": 5,
+    "d8f046d4-0fd0-424e-9b7d-1ad89485766a": 6,
+    "23a58e84-c462-4bf8-a5ea-c7bc3825a70c": 6
+  },
+  "avg_doc_length": 4.95,
+  "total_docs": 20
+}

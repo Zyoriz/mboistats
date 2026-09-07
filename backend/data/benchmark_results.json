@@ -1,0 +1,23 @@
+{
+  "baseline": {
+    "precision@5": 0.346,
+    "recall@5": 0.343,
+    "mrr@5": 0.6173,
+    "ndcg@5": 0.3975,
+    "n_users": 100
+  },
+  "bm25": {
+    "precision@5": 0.458,
+    "recall@5": 0.4566,
+    "mrr@5": 1.0,
+    "ndcg@5": 0.601,
+    "n_users": 100
+  },
+  "hybrid": {
+    "precision@5": 0.578,
+    "recall@5": 0.5745,
+    "mrr@5": 1.0,
+    "ndcg@5": 0.7118,
+    "n_users": 100
+  }
+}

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:mboistats/services/logger_service.dart';
+import 'package:mboistats/services/search_service.dart';
+import 'package:mboistats/services/recommendation_service.dart';
 import 'package:mboistats/theme.dart';
 
 class SearchPage extends StatefulWidget {
@@ -15,6 +17,8 @@ class SearchPage extends StatefulWidget {
 class _SearchPageState extends State<SearchPage> {
   final TextEditingController _searchController = TextEditingController();
   List<Map<String, dynamic>> _rawResults = [];
+  List<RecommendedItem> _suggestedItems = [];
+  List<String> _userRecommendedIds = [];
   bool _isLoading = false;
   String _currentQuery = '';
   Timer? _debounceTimer;
@@ -41,9 +45,25 @@ class _SearchPageState extends State<SearchPage> {
     super.initState();
     _searchController.text = widget.initialQuery;
     _currentQuery = widget.initialQuery;
+    _loadUserContext();
     if (widget.initialQuery.trim().isNotEmpty) {
       _performSearch(widget.initialQuery);
     }
+  }
+
+  Future<void> _loadUserContext() async {
+    try {
+      final recs = await RecommendationService.getSectorRecommendations();
+      if (mounted) {
+        setState(() {
+          _suggestedItems = recs;
+          _userRecommendedIds = recs
+              .map((r) => r.contentUrl ?? '')
+              .where((id) => id.isNotEmpty)
+              .toList();
+        });
+      }
+    } catch (_) {}
   }
 
   @override
@@ -98,11 +118,17 @@ class _SearchPageState extends State<SearchPage> {
           .limit(100);
 
       final List<Map<String, dynamic>> list = List<Map<String, dynamic>>.from(response);
-      list.sort(_compareByNewest);
+
+      // Re-rank menggunakan BM25 + fuzzy + ML boost
+      final ranked = SearchService.rankResults(
+        query: cleanQuery,
+        rawResults: list,
+        userRecommendedItemIds: _userRecommendedIds,
+      );
 
       if (mounted) {
         setState(() {
-          _rawResults = list;
+          _rawResults = ranked;
           _isLoading = false;
         });
       }
@@ -360,7 +386,9 @@ class _SearchPageState extends State<SearchPage> {
             child: Text(
               _isLoading
                   ? 'Mencari data...'
-                  : '${results.length} hasil ditemukan ${_currentQuery.isNotEmpty ? 'untuk "$_currentQuery"' : ''}',
+                  : _currentQuery.isEmpty
+                      ? 'Rekomendasi untuk Anda'
+                      : '${results.length} hasil (diurutkan berdasarkan relevansi)',
               style: pjsMedium12.copyWith(color: dark3),
             ),
           ),
@@ -376,22 +404,22 @@ class _SearchPageState extends State<SearchPage> {
                     ),
                   )
                 : results.isEmpty
-                    ? Center(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.search_off, size: 64, color: isDark ? Colors.white38 : dark4),
-                            const SizedBox(height: 16),
-                            Text(
-                              _currentQuery.isEmpty
-                                  ? 'Ketik kata kunci untuk mencari seluruh data BPS'
-                                  : 'Tidak ditemukan data untuk\n"$_currentQuery"${_selectedSector != 'semua' ? ' di sektor ini' : ''}',
-                              style: pjsRegular14.copyWith(color: dark3),
-                              textAlign: TextAlign.center,
+                    ? _currentQuery.isEmpty
+                        ? _buildSuggestedSection(isDark)
+                        : Center(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.search_off, size: 64, color: isDark ? Colors.white38 : dark4),
+                                const SizedBox(height: 16),
+                                Text(
+                                  'Tidak ditemukan data untuk\n"$_currentQuery"${_selectedSector != 'semua' ? ' di sektor ini' : ''}',
+                                  style: pjsRegular14.copyWith(color: dark3),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
-                      )
+                          )
                     : ListView.builder(
                         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                         itemCount: results.length,
@@ -456,13 +484,20 @@ class _SearchPageState extends State<SearchPage> {
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text(
-                                            title,
-                                            style: pjsSemiBold14.copyWith(
-                                              color: isDark ? Colors.white : dark1,
-                                            ),
+                                          RichText(
                                             maxLines: 2,
                                             overflow: TextOverflow.ellipsis,
+                                            text: TextSpan(
+                                              children: SearchService.highlightMatch(
+                                                title,
+                                                _currentQuery,
+                                                pjsSemiBold14.copyWith(color: isDark ? Colors.white : dark1),
+                                                pjsSemiBold14.copyWith(
+                                                  color: blueNormal,
+                                                  backgroundColor: blueNormal.withOpacity(0.12),
+                                                ),
+                                              ),
+                                            ),
                                           ),
                                           const SizedBox(height: 4),
                                           Row(
@@ -519,7 +554,90 @@ class _SearchPageState extends State<SearchPage> {
     );
   }
 
+  Widget _buildSuggestedSection(bool isDark) {
+    if (_suggestedItems.isEmpty) {
+      return Center(
+        child: Text(
+          'Ketik kata kunci untuk mencari seluruh data BPS',
+          style: pjsRegular14.copyWith(color: dark3),
+          textAlign: TextAlign.center,
+        ),
+      );
+    }
+    return ListView.builder(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+      itemCount: _suggestedItems.length,
+      itemBuilder: (context, index) {
+        final item = _suggestedItems[index];
+        return Padding(
+          padding: const EdgeInsets.only(bottom: 10),
+          child: InkWell(
+            onTap: () {
+              final url = item.contentUrl ?? '';
+              if (url.isEmpty) return;
+              LoggerService.logActivity(
+                actionType: 'view_pdf',
+                sectorCategory: item.description,
+                itemName: item.title,
+                coverUrl: item.coverUrl ?? '',
+                contentUrl: url,
+              );
+              Navigator.pushNamed(context, '/pdf_viewer',
+                  arguments: {'pdfUrl': url, 'title': item.title});
+            },
+            borderRadius: BorderRadius.circular(12),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+              decoration: BoxDecoration(
+                color: isDark ? const Color(0xFF1E1E1E) : Colors.white,
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: dark4),
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    width: 46, height: 46,
+                    decoration: BoxDecoration(
+                      color: Colors.blue.shade50,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Image.asset(
+                      item.icon,
+                      errorBuilder: (_, __, ___) =>
+                          const Icon(Icons.description, color: Colors.blue, size: 20),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(item.title,
+                            style: pjsSemiBold14.copyWith(
+                                color: isDark ? Colors.white : dark1),
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis),
+                        const SizedBox(height: 4),
+                        Text(item.description,
+                            style: pjsRegular12.copyWith(color: dark3),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Icon(Icons.arrow_forward_ios, size: 14, color: Colors.grey.shade400),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
   Widget _buildTypePill(String typeKey, String label, bool isDark) {
+
     final isSelected = _selectedContentType == typeKey;
     return GestureDetector(
       onTap: () {
